@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DZNEmptyDataSet (1.8.1)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DZNEmptyDataSet
+  - MBProgressHUD
+  - MJRefresh
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
+
+PODFILE CHECKSUM: a77c0715c834d5e4b205e25a0150f50b5557981e
+
+COCOAPODS: 1.4.0
