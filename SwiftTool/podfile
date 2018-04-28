@@ -1,8 +1,0 @@
-use_frameworks!
-target 'SwiftTool' do
- 
-pod 'MJRefresh'
-pod 'MBProgressHUD'
-pod 'DZNEmptyDataSet'
-pod 'Alamofire'
-end
