@@ -36,7 +36,6 @@
 	<array>
 		<string>获取设备信息</string>
 		<string>各种权限判断</string>
-		<string>各种跳转</string>
 		<string>判断是否安装各种APP</string>
 		<string>开启关闭一些设备</string>
 	</array>
