@@ -43,10 +43,17 @@ extension ServiceManager {
         var result = false
         
         switch type {
-        case LimitService_Type.Service_Camera:
-            
+        case LimitService_Type.Service_PhotoAlbum:
+            //相册权限
+            result = self.isAllowPhotoAlbumService()
             break
-        default:
+        case LimitService_Type.Service_Camera:
+            //相机权限
+            result = self.isAllowCameraService()
+            break
+        case LimitService_Type.Service_Microphone:
+            //相机权限
+            result = self.isAllowMicrophoneService()
             break
         }
         
