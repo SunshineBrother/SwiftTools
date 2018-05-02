@@ -1,12 +1,60 @@
 # SwiftTools
 技术不够，努力来凑；封装不了一个伟大的开源框架，但是仍然想要有一个自己的开源项目，所以就准备把一些项目中的常用工具类给打出来，省的每一次写项目的时候都要重写一遍
 
-## 编程规范
-[参考](https://www.jianshu.com/p/8b76814b3663)
- - 1、函数命名
- - 2、常量&变量命名
+## git常见命令
+ 
+ - `git pull`拉去远程文件
+ - `git push`提交文件到远程
+ - `git status`是哪些文件有所修改
+ - `git diff` 可以查询所修改的代码
+ - `git add -A` 增加自己所做的修改
+ 
+ #### 版本回退
+ 
+ `git log` 查看提交历史
+ 
+ 本地分支版本回退`git reset --hard commitID`,  `commitID `就是我们要返回的那个历史提交
+ 
+ `git revert HEAD `              撤销前一次 commit
+ 
+ `git revert HEAD^    `          撤销前前一次 commit
  
  
+ 
+ 远程分支版本回退:
+ - 1、首先要回退本地分支
+ ```
+ git log
+ git reset --hard commitID
+ ```
+ - 2、强制推送到远程分支
+ ```
+ git push -f
+ ```
+ 
+ 
+ #### 创建与合并分支
+ `git branch` 查看分支
+ `git branch <name>` 创建分支
+ `git checkout <name>` 切换分支
+ `git checkout -b <name>` 创建+切换分支
+ `git merge <name>` 合并某分支到当前分支
+ `git branch -d <name>` 删除分支
+ 
+ `git status` 查看冲突情况
+ 
+ 
+ #### 标签
+ `git tag <name>` 用于新建一个标签，默认为HEAD
+ 对`commit id`打标签`git tag <name> commitId`
+ `git tag -a <tagname> -m "blablabla..."`可以指定标签信息
+ `git tag`可以查看所有标签。
+ `git push origin <tagname>`推送一个本地标签到远程
+ `git push origin --tags` 可以推送全部未推送过的本地标签
+ `git tag -d <tagname>` 可以删除一个本地标签
+ `git push origin :refs/tags/<tagname>`可以删除一个远程标签
+ 
+
  
  ## 硬件
  关于硬件方面我分了一下几个方面
