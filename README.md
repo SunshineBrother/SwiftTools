@@ -82,18 +82,24 @@
 - 定位权限: Privacy - Location Always Usage Description
 - 位置权限：Privacy - Location Usage Description
 - 媒体库权限：Privacy - Media Library Usage Description
-- 健康分享权限：Privacy - Health Share Usage Description
-- 健康更新权限：Privacy - Health Update Usage Description
-- 运动使用权限：Privacy - Motion Usage Description
-- 音乐权限：Privacy - Music Usage Description
-- 提醒使用权限：Privacy - Reminders Usage Description
-- Siri使用权限：Privacy - Siri Usage Description
-- 电视供应商使用权限：Privacy - TV Provider Usage Description
-- 视频用户账号使用权限：Privacy - Video Subscriber Account Usage Description
+
+ 
+
+我们在进行权限判定的时候，可以调用这个方法
+```
+/// 权限服务
+///
+/// - Parameter type: 类型
+/// - Returns: 返回结果
+func isAllowService(type:LimitService_Type) -> Bool {}
+```
+ 我们在开启设备的跳转的时候
+ ```
+ func TurnOnServeManager() {}
+ ```
  
  
  
- #### hhhhhhhhhhh
  
  
  
