@@ -8,9 +8,51 @@
 
 import UIKit
 import SwiftyJSON
-class Model: NSObject {
 
-    var Title = ""
-    var detailArr = [JSON]()
-
+class groupModel: NSObject {
+    var groupName = ""
+    var detailArr = NSMutableArray()
+    
 }
+
+
+class Model: NSObject {
+    var title = ""
+    var className = ""
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

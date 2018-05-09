@@ -1,5 +1,6 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManager (6.0.2)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.3)
   - SnapKit (4.0.0)
@@ -7,6 +8,7 @@ PODS:
 
 DEPENDENCIES:
   - DZNEmptyDataSet
+  - IQKeyboardManager
   - MBProgressHUD
   - MJRefresh
   - SnapKit (~> 4.0.0)
@@ -15,6 +17,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - DZNEmptyDataSet
+    - IQKeyboardManager
     - MBProgressHUD
     - MJRefresh
     - SnapKit
@@ -22,11 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManager: c49d59e358aeeffaa0280aa305093c2b194d2607
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: c6b6d4d542ba1b74421b18b863077899d7f26e31
+PODFILE CHECKSUM: c7b73fbde4ecd0b6d90bb254fb1efe6bb5f2722e
 
 COCOAPODS: 1.5.0

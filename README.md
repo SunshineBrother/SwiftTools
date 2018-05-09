@@ -54,7 +54,88 @@
  `git tag -d <tagname>` 可以删除一个本地标签
  `git push origin :refs/tags/<tagname>`可以删除一个远程标签
  
+ ## UIKit
+ 
+ ### UITextField
+ 对于UITextField我主要扩展了一下内容
+ - 设置placeHolder的颜色
+ - 设置左侧图标，右侧图标
+ - 设置文本输入与左侧的距离
+ - 一些类型的限制
+    - 1、输入手机号
+           - 1、不做任何限制
+           - 2、输入格式344
+    - 2、输入金额
+    - 3、位数的限制
+ 
+textField是我们最常用的一个控件之一了，对于他的一些基本属性根本没有必要介绍了，但是有几个稍微有点特殊的属性我就简单的介绍一下
+- 1、leftView，rightView，这两个属性分别能设置textField内的左右两边的视图
+ - 2、background，disabledBackground，都是设置背景，一个是UIColor属性，一个是UIImage属性
+ - 3、UITextFieldViewMode，这是一个枚举，用来定义ViewMode什么时候显示
+   
+```
+      typedef enum {
+         UITextFieldViewModeNever,　重不出现
+         UITextFieldViewModeWhileEditing, 编辑时出现
+         UITextFieldViewModeUnlessEditing,　除了编辑外都出现
+         UITextFieldViewModeAlways 　一直出现
+         } UITextFieldViewMode;
+ ```
+- 4、keyboardType 键盘的样式
+ ```
+ typedef enum {
+ UIKeyboardTypeDefault,     　默认键盘，支持所有字符         
+ UIKeyboardTypeASCIICapable,　支持ASCII的默认键盘
+ UIKeyboardTypeNumbersAndPunctuation,　标准电话键盘，支持＋＊＃字符
+ UIKeyboardTypeURL,            URL键盘，支持.com按钮 只支持URL字符
+ UIKeyboardTypeNumberPad,            　数字键盘
+ UIKeyboardTypePhonePad,　 　电话键盘
+ UIKeyboardTypeNamePhonePad, 　电话键盘，也支持输入人名
+ UIKeyboardTypeEmailAddress, 　用于输入电子 邮件地址的键盘     
+ UIKeyboardTypeDecimalPad,   　数字键盘 有数字和小数点
+ UIKeyboardTypeTwitter,      　优化的键盘，方便输入@、#字符
+ UIKeyboardTypeAlphabet = UIKeyboardTypeASCIICapable, 
+ } UIKeyboardType;
+ ```
+ - 5、UITextField派生自UIControl，所以UIControl类中的通知系统在文本字段中也可以使用。除了UIControl类的标准事件，你还可以使用下列UITextField类特有的事件
+ ```
+ UITextFieldTextDidBeginEditingNotification
+ UITextFieldTextDidChangeNotification
+ UITextFieldTextDidEndEditingNotification
+ 当文本字段退出编辑模式时触发。通知的object属性存储了最终文本
+ ```
+ 
+ ***我一共封装了5个方法，3个属性***
+ 
+ #### 5个方法
+ ```
+ ///设置placehold颜色
+ func setPlaceHolderTextColor(_ color: UIColor) {}
+ ///文本距离左右侧的距离
+ func distanceSides(_ leftWidth:CGFloat,_ rightWidth:CGFloat? = 0)  {}
+ /// 添加左侧icon
+ func addLeftIcon(_ image: UIImage,size:CGSize,padding: CGFloat)  {}
+ /// 添加右侧icon
+ func addRightIcon(_ image: UIImage,size:CGSize,padding: CGFloat)  {}
+ /// 添加左侧标题
+ func addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat)  {}
 
+ ```
+  #### 3个属性
+- maxCount 最大数量
+- moneyType 输入金额类型
+- MobileType 手机号类型 
+手机号类型 普通的12345678901   344格式 123 4567 8901
+//手机号类型
+enum MobilePhoneType: String {
+case MobileCommon = "MobileCommon"
+case MobileSpecial = "MobileSpecial"
+}
+ 
+ 
+ 
+ 
+ 
  
  ## 硬件
  关于硬件方面我分了一下几个方面

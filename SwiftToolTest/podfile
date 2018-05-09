@@ -1,0 +1,9 @@
+use_frameworks!
+target 'SwiftToolTest' do
+pod 'SwiftyJSON'
+pod 'SnapKit','~> 4.0.0'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'DZNEmptyDataSet'
+pod 'IQKeyboardManager'
+end

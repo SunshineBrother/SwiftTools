@@ -26,23 +26,23 @@ class TableViewController: UITableViewController {
         let fileDic = NSDictionary.init(contentsOfFile: filePath!) ?? [String : Any]() as NSDictionary
         let json = JSON(fileDic)
         for (key,value) in json {
-            let model = Model()
-            model.Title = key
-            model.detailArr = JSON(value).arrayValue
-            self.dataList.add(model)
+            let GModel = groupModel()
+            GModel.groupName = key
+            let detailArr = JSON(value).arrayValue
+            for item in detailArr{
+                let model = Model()
+                model.title = item["Title"].stringValue
+                model.className = item["Class"].stringValue
+                GModel.detailArr.add(model)
+            }
+            
+            self.dataList.add(GModel)
+            
         }
   
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,30 +50,85 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let model = self.dataList[section] as! Model
+        let model = self.dataList[section] as! groupModel
         return model.detailArr.count
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let model = self.dataList[section] as! Model
-        return model.Title
+        let model = self.dataList[section] as! groupModel
+        return model.groupName
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
             cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         }
+        let GModel = self.dataList[indexPath.section] as! groupModel
+        let model = GModel.detailArr[indexPath.row] as! Model
         
-        let model = self.dataList[indexPath.section] as! Model
-        let text = model.detailArr[indexPath.row].stringValue
-        cell?.textLabel?.text = text
+        cell?.textLabel?.text = model.title
         
         return cell!
     }
  
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let vc = TextFieldController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        return
+        
+         
+        let GModel = self.dataList[indexPath.section] as! groupModel
+        let model = GModel.detailArr[indexPath.row] as! Model
+        
+        let nameSpace = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
+        guard let cls = NSClassFromString(nameSpace + "." + model.title) as? UIViewController.Type else {
+            print("************类 生成失败**************")
+            return
+        }
+        // 通过得到的class类型创建对象
+        let vcClass = cls.init()
+   
+        vcClass.view.backgroundColor = UIColor.white
+        vcClass.title = model.title
+        self.navigationController?.pushViewController(vcClass, animated: true)
+        
+        
+        
+    }
   
 
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
