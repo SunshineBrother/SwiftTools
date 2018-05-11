@@ -2,7 +2,6 @@
 //  UITextField+JHExtension.swift
 //  SwiftToolTest
 //
-//  Created by yunna on 2018/5/8.
 //  Copyright © 2018年 yunna. All rights reserved.
 //
 
@@ -234,6 +233,8 @@ extension UITextField{
             return  objc_getAssociatedObject(self, RunTimeTextFieldKey.moneyType!) as? Bool
         }
     }
+    
+    
     
     
     

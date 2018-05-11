@@ -72,30 +72,20 @@ class TableViewController: UITableViewController {
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        let vc = TextFieldController()
-        self.navigationController?.pushViewController(vc, animated: true)
         
-        return
-        
-         
         let GModel = self.dataList[indexPath.section] as! groupModel
         let model = GModel.detailArr[indexPath.row] as! Model
         
         let nameSpace = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
-        guard let cls = NSClassFromString(nameSpace + "." + model.title) as? UIViewController.Type else {
-            print("************类 生成失败**************")
+        guard let cls = NSClassFromString(nameSpace + "." + model.className) as? UIViewController.Type else {
             return
         }
         // 通过得到的class类型创建对象
         let vcClass = cls.init()
-   
         vcClass.view.backgroundColor = UIColor.white
         vcClass.title = model.title
         self.navigationController?.pushViewController(vcClass, animated: true)
-        
-        
-        
+ 
     }
   
 

@@ -133,7 +133,12 @@ case MobileSpecial = "MobileSpecial"
 }
  
  
- 
+  ### UITextView
+  我在自定义的`JHTextView`中添加了4个常用属性
+  - 1、tapTwiceDisapper 点击两下键盘消失
+  - 2、MaxCount。 最大允许输入文本输入量
+  - 3、设置placeHolder
+  - 4、设置placeHolder的颜色
  
  
  

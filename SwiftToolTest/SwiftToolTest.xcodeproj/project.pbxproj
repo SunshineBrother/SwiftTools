@@ -20,6 +20,9 @@
 		285BA8262094471F00735E74 /* swiftTool.plist in Resources */ = {isa = PBXBuildFile; fileRef = 285BA8252094471F00735E74 /* swiftTool.plist */; };
 		285BA82820944E6500735E74 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA82720944E6500735E74 /* TableViewController.swift */; };
 		285BA82A209462D700735E74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA829209462D700735E74 /* Model.swift */; };
+		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
+		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
+		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		285BA8252094471F00735E74 /* swiftTool.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = swiftTool.plist; sourceTree = "<group>"; };
 		285BA82720944E6500735E74 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		285BA829209462D700735E74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
+		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		34A63E706368C3EE93350ADF /* Pods-SwiftToolTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftToolTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */,
+				28B34F6B20A3F22300405640 /* JHTextView.swift */,
 			);
 			path = UiKit;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 			children = (
 				2828281F20A1BA2900D40C92 /* TextFieldController.swift */,
 				2828282020A1BA2900D40C92 /* TextFieldController.xib */,
+				28B8DC9620A44CA00046A51F /* TextViewController.swift */,
+				28B8DC9720A44CA00046A51F /* TextViewController.xib */,
 			);
 			path = Uikit;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				285BA8262094471F00735E74 /* swiftTool.plist in Resources */,
 				2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */,
 				285BA8002094457D00735E74 /* LaunchScreen.storyboard in Resources */,
+				28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */,
 				285BA7FD2094457D00735E74 /* Assets.xcassets in Resources */,
 				285BA7FB2094457C00735E74 /* Main.storyboard in Resources */,
 			);
@@ -391,7 +401,9 @@
 				285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				285BA82820944E6500735E74 /* TableViewController.swift in Sources */,
+				28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */,
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
+				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
