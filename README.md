@@ -75,42 +75,7 @@
     - 2、输入金额
     - 3、位数的限制
  
-textField是我们最常用的一个控件之一了，对于他的一些基本属性根本没有必要介绍了，但是有几个稍微有点特殊的属性我就简单的介绍一下
-- 1、leftView，rightView，这两个属性分别能设置textField内的左右两边的视图
- - 2、background，disabledBackground，都是设置背景，一个是UIColor属性，一个是UIImage属性
- - 3、UITextFieldViewMode，这是一个枚举，用来定义ViewMode什么时候显示
-   
-```
-      typedef enum {
-         UITextFieldViewModeNever,　重不出现
-         UITextFieldViewModeWhileEditing, 编辑时出现
-         UITextFieldViewModeUnlessEditing,　除了编辑外都出现
-         UITextFieldViewModeAlways 　一直出现
-         } UITextFieldViewMode;
- ```
-- 4、keyboardType 键盘的样式
- ```
- typedef enum {
- UIKeyboardTypeDefault,     　默认键盘，支持所有字符         
- UIKeyboardTypeASCIICapable,　支持ASCII的默认键盘
- UIKeyboardTypeNumbersAndPunctuation,　标准电话键盘，支持＋＊＃字符
- UIKeyboardTypeURL,            URL键盘，支持.com按钮 只支持URL字符
- UIKeyboardTypeNumberPad,            　数字键盘
- UIKeyboardTypePhonePad,　 　电话键盘
- UIKeyboardTypeNamePhonePad, 　电话键盘，也支持输入人名
- UIKeyboardTypeEmailAddress, 　用于输入电子 邮件地址的键盘     
- UIKeyboardTypeDecimalPad,   　数字键盘 有数字和小数点
- UIKeyboardTypeTwitter,      　优化的键盘，方便输入@、#字符
- UIKeyboardTypeAlphabet = UIKeyboardTypeASCIICapable, 
- } UIKeyboardType;
- ```
- - 5、UITextField派生自UIControl，所以UIControl类中的通知系统在文本字段中也可以使用。除了UIControl类的标准事件，你还可以使用下列UITextField类特有的事件
- ```
- UITextFieldTextDidBeginEditingNotification
- UITextFieldTextDidChangeNotification
- UITextFieldTextDidEndEditingNotification
- 当文本字段退出编辑模式时触发。通知的object属性存储了最终文本
- ```
+
  
  ***我一共封装了5个方法，3个属性***
  
