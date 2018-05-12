@@ -15,7 +15,7 @@
  ## UIKit
  
  ### UITextField
- 
+ ##### 方法
  |名称|说明|
  |---|:---:|
  |setPlaceHolderTextColor(_ color: UIColor)|设置placehold颜色|
@@ -24,43 +24,22 @@
  |addRightIcon(_ image: UIImage,size:CGSize,padding: CGFloat)|添加右侧icon|
 |addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat)|添加左侧标题|
  
+ #### 属性
+ |名称|说明|
+ |---|:---:|
+ |maxCount|最大数量|
+|moneyType|输入金额类型|
+|MobileType|手机号类型 手机号类型 普通的12345678901   344格式 123 4567 8901|
 
- 
- 
- 
- #### 5个方法
- ```
- ///设置placehold颜色
- func setPlaceHolderTextColor(_ color: UIColor) {}
- ///文本距离左右侧的距离
- func distanceSides(_ leftWidth:CGFloat,_ rightWidth:CGFloat? = 0)  {}
- /// 添加左侧icon
- func addLeftIcon(_ image: UIImage,size:CGSize,padding: CGFloat)  {}
- /// 添加右侧icon
- func
- {}
- /// 添加左侧标题
- func addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat)  {}
-
- ```
-  #### 3个属性
-- maxCount 最大数量
-- moneyType 输入金额类型
-- MobileType 手机号类型 
-手机号类型 普通的12345678901   344格式 123 4567 8901
-//手机号类型
-enum MobilePhoneType: String {
-case MobileCommon = "MobileCommon"
-case MobileSpecial = "MobileSpecial"
-}
- 
- 
   ### UITextView
-  我在自定义的`JHTextView`中添加了4个常用属性
-  - 1、tapTwiceDisapper 点击两下键盘消失
-  - 2、MaxCount。 最大允许输入文本输入量
-  - 3、设置placeHolder
-  - 4、设置placeHolder的颜色
+  #### 属性
+  |名称|说明|
+  |---|:---:|
+  |tapTwiceDisapper| 点击两下键盘消失|
+  |MaxCount|最大允许输入文本输入量|
+  |placeHolder|设置placeHolder|
+  |placeHolder|设置placeHolder的颜色|
+ 
  
  
  
@@ -80,10 +59,6 @@ case MobileSpecial = "MobileSpecial"
 
 我们在进行权限判定的时候，可以调用这个方法
 ```
-/// 权限服务
-///
-/// - Parameter type: 类型
-/// - Returns: 返回结果
 func isAllowService(type:LimitService_Type) -> Bool {}
 ```
  我们在开启设备的跳转的时候
