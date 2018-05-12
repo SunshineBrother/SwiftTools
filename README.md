@@ -15,20 +15,18 @@
  ## UIKit
  
  ### UITextField
- 对于UITextField我主要扩展了一下内容
- - 设置placeHolder的颜色
- - 设置左侧图标，右侧图标
- - 设置文本输入与左侧的距离
- - 一些类型的限制
-    - 1、输入手机号
-           - 1、不做任何限制
-           - 2、输入格式344
-    - 2、输入金额
-    - 3、位数的限制
+ 
+ |名称|说明|
+ |---|:---:|
+ |setPlaceHolderTextColor(_ color: UIColor)|设置placehold颜色|
+ |distanceSides(_ leftWidth:CGFloat,_ rightWidth:CGFloat? = 0)|文本距离左右侧的距离|
+ |addLeftIcon(_ image: UIImage,size:CGSize,padding: CGFloat)| 添加左侧icon|
+ |addRightIcon(_ image: UIImage,size:CGSize,padding: CGFloat)|添加右侧icon|
+|addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat)|添加左侧标题|
  
 
  
- ***我一共封装了5个方法，3个属性***
+ 
  
  #### 5个方法
  ```
@@ -39,7 +37,8 @@
  /// 添加左侧icon
  func addLeftIcon(_ image: UIImage,size:CGSize,padding: CGFloat)  {}
  /// 添加右侧icon
- func addRightIcon(_ image: UIImage,size:CGSize,padding: CGFloat)  {}
+ func
+ {}
  /// 添加左侧标题
  func addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat)  {}
 
