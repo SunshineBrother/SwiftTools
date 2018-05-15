@@ -32,7 +32,6 @@ class StringController: UIViewController {
         print(TEXT3.deleteEndCharacters())
         print(TEXT3.deleteString(string: "https"))
         
-
         // 类型转化
         let TEXT4 = "123"
         let TEXT5 = "abc"

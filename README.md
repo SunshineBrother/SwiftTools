@@ -72,8 +72,10 @@
  |obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat|获取文本高度|
  |obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat|获取文本宽度|
  
-
-
+### Array扩展
+|名称|说明|
+|---|:---:|
+|removedDuplicates|删除  重复元素|
 
 
  

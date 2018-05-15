@@ -132,6 +132,7 @@ extension String{
 
 //MARK: -- 将字符串替换成值类型 --
 extension String{
+     
     ///变成Int 类型
     public func toInt() -> Int? {
         if let num = NumberFormatter().number(from: self) {
