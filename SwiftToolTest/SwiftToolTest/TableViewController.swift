@@ -15,7 +15,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "SwiftTool"
         //获取数据源
         obtainDataSource()
     }

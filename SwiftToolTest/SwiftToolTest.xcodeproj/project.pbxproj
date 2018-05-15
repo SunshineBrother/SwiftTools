@@ -11,6 +11,8 @@
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
+		283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283743FD20AA73C2008F1ED1 /* StringController.swift */; };
+		2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2837440020AA7447008F1ED1 /* String+JHExtension.swift */; };
 		285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA7F52094457C00735E74 /* AppDelegate.swift */; };
 		285BA7FB2094457C00735E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285BA7F92094457C00735E74 /* Main.storyboard */; };
 		285BA7FD2094457D00735E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285BA7FC2094457D00735E74 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		2828282020A1BA2900D40C92 /* TextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldController.xib; sourceTree = "<group>"; };
+		283743FD20AA73C2008F1ED1 /* StringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringController.swift; sourceTree = "<group>"; };
+		2837440020AA7447008F1ED1 /* String+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JHExtension.swift"; sourceTree = "<group>"; };
 		285BA7F22094457C00735E74 /* SwiftToolTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftToolTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285BA7F52094457C00735E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 5; };
 		285BA7FA2094457C00735E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +122,22 @@
 			path = Uikit;
 			sourceTree = "<group>";
 		};
+		283743FC20AA733E008F1ED1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				283743FD20AA73C2008F1ED1 /* StringController.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		283743FF20AA7420008F1ED1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2837440020AA7447008F1ED1 /* String+JHExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		285BA7E92094457C00735E74 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +167,7 @@
 				285BA7F52094457C00735E74 /* AppDelegate.swift */,
 				285BA82720944E6500735E74 /* TableViewController.swift */,
 				285BA829209462D700735E74 /* Model.swift */,
+				283743FC20AA733E008F1ED1 /* Foundation */,
 				2828281C20A1B9E100D40C92 /* Uikit */,
 				285BA7F92094457C00735E74 /* Main.storyboard */,
 				285BA7FC2094457D00735E74 /* Assets.xcassets */,
@@ -179,6 +200,7 @@
 		28EF5B8B2099D8500026D1E0 /* SwiftTool */ = {
 			isa = PBXGroup;
 			children = (
+				283743FF20AA7420008F1ED1 /* Foundation */,
 				2828281920A1B82800D40C92 /* UiKit */,
 				28EF5B8C2099D8500026D1E0 /* Hardware */,
 			);
@@ -400,9 +422,11 @@
 				2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */,
 				285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
+				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
 				285BA82820944E6500735E74 /* TableViewController.swift in Sources */,
 				28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */,
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
+				283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */,
 				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

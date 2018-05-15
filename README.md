@@ -8,8 +8,6 @@
 
 # SwiftTools
 技术不够，努力来凑；封装不了一个伟大的开源框架，但是仍然想要有一个自己的开源项目，所以就准备把一些项目中的常用工具类给封装出来，省的每一次写项目的时候都要重写一遍。
-
-
  
  
  ## UIKit
@@ -41,7 +39,43 @@
   |placeHolder|设置placeHolder的颜色|
  
  
+## UIFoundation
+### String扩展
+#### 属性
+|名称|说明|
+|---|:---:|
+|urlEncoded|URL编码|
+|urlDecode|URL解码|
+|base64|base64编码|
+|base64Decode|Base64解码|
+|isEmail|是否是邮箱|
+|isValidUrl|是否是URL|
+|isMobile|是否是手机号|
+|isAlphanumeric|是否是字母数字的组合|
  
+ ##### 方法
+ |名称|说明|
+ |---|:---:|
+ |subStringFrom(index: Int,length:Int) -> String|字符串的截取|
+ |substring(from: Int, to: Int) -> String|字符串的截取|
+ |substring(from: Int?, to: Int?) -> String|字符串的截取|
+ |substring(from: Int) -> String|字符串的截取|
+ |substring(to: Int) -> String|字符串的截取|
+ |stringByReplacingCharactersInRange(index:Int,length:Int,replacText:String) -> String |替换指定范围内的字符串|
+ |stringByReplacingstringByReplacingString(text:String,replacText:String) -> String|替换指定字符串|
+ |deleteEndCharacters() -> String|删除最后一个字符|
+ |deleteString(string:String) -> String |删除指定字符串|
+ |split(string:String) -> [String]|将字符串通过特定的字符串拆分为字符串数组|
+ |toInt() -> Int?|变成Int 类型|
+ |toDouble() -> Double?|变成Double 类型|
+ |toFloat() -> Float?|变成Float 类型|
+ |obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat|获取文本高度|
+ |obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat|获取文本宽度|
+ 
+
+
+
+
  
  ## 硬件
  关于硬件方面我分了一下几个方面
