@@ -77,7 +77,15 @@
 |---|:---:|
 |removedDuplicates|删除  重复元素|
 
-
+### Dictionary扩展
+|名称|说明|
+|---|:---:|
+|addDictionary|拼接字典|
+|has(key: Key) -> Bool|判断是否存在|
+| removeAll(keys: [Key])|删除所有|
+|jsonString(prettify: Bool = false) -> String?|Json字典转Json字符串|
+|jsonData(prettify: Bool = false) -> Data?|Json字典转Data|
+ 
  
  ## 硬件
  关于硬件方面我分了一下几个方面

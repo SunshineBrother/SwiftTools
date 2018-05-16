@@ -13,7 +13,7 @@ class ArrayController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        var list = ["1","1","2","2"]
+        let list = ["1","1","2","2"]
         print(list.removedDuplicates())
     
         
