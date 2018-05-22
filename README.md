@@ -122,7 +122,20 @@
 |func StampTime(from date:Date) ->  u_long{}|date 转化为时间戳|
 |func date(from StampTime:u_long) -> Date {}|时间戳转化为date|
  
-  
+    
+### 正则表达式
+|名称|说明|
+|---|:---:|
+|func EmailIsValidated(vStr: String) -> Bool {}|验证邮箱|
+|func PhoneNumberIsValidated(vStr: String) -> Bool {}|验证手机号|
+|func NumberIsValidated(vStr: String) -> Bool {}|验证只能输入数字|
+|func SpecificNumbersIsValidated(vStr: String) -> Bool {}|验证输入几位数字|
+|func ChineseIsValidated(vStr: String) -> Bool {}|验证是否是中文|
+|func IllegalCharacterIsValidated(vStr: String) -> Bool {}|验证是否含有^%&',;=?$\"等字符|
+|func URLIsValidated(vStr: String) -> Bool {}|验证URL|
+|func QQIsValidated(vStr: String) -> Bool {}|验证QQ号|
+|func IdCardIsValidated(vStr: String) -> Bool {}|验证身份证号|
+ 
  
  ## 硬件
  关于硬件方面我分了一下几个方面

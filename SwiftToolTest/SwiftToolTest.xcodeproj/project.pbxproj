@@ -34,6 +34,8 @@
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
 		28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03E20B3C45100278692 /* Date+JHExtension.swift */; };
+		28FBB04320B403A400278692 /* JHRegularHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB04220B403A400278692 /* JHRegularHelp.swift */; };
+		28FBB04520B4061A00278692 /* regularController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB04420B4061A00278692 /* regularController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
 		28FBB03E20B3C45100278692 /* Date+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+JHExtension.swift"; sourceTree = "<group>"; };
+		28FBB04220B403A400278692 /* JHRegularHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHRegularHelp.swift; sourceTree = "<group>"; };
+		28FBB04420B4061A00278692 /* regularController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regularController.swift; sourceTree = "<group>"; };
 		34A63E706368C3EE93350ADF /* Pods-SwiftToolTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftToolTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,7 @@
 				2880CE2820ABC40A00A60E53 /* DictionaryController.swift */,
 				2880CE3620ABD94600A60E53 /* ValueChangeController.swift */,
 				28FBB03A20B3C25B00278692 /* TimeController.swift */,
+				28FBB04420B4061A00278692 /* regularController.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */,
 				2880CE3420ABD90400A60E53 /* ValueChange.swift */,
 				28FBB03E20B3C45100278692 /* Date+JHExtension.swift */,
+				28FBB04220B403A400278692 /* JHRegularHelp.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -444,11 +450,13 @@
 			files = (
 				285BA82A209462D700735E74 /* Model.swift in Sources */,
 				2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */,
+				28FBB04320B403A400278692 /* JHRegularHelp.swift in Sources */,
 				2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */,
 				285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */,
 				2837440F20AB0109008F1ED1 /* Array+JHExtension.swift in Sources */,
 				28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */,
 				2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */,
+				28FBB04520B4061A00278692 /* regularController.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
