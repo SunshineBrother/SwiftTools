@@ -88,6 +88,19 @@
 |jsonString(prettify: Bool = false) -> String?|Json字典转Json字符串|
 |jsonData(prettify: Bool = false) -> Data?|Json字典转Data|
  
+ ### 值类型转换
+ |名称|说明|
+ |---|:---:|
+ |class func data(from jsonString:String) -> Data {}|把字符串转变为data|
+ |class func jsonString(from data:Data) -> String {}|data 转 字符串|
+ |class func jsonString(from dictionary:Dictionary<String, Any>) -> String {}|字典转换为JSONString|
+ | class func dictionary(from jsonString:String) -> Dictionary<String, Any> {}|JSONString转换为字典|
+ | class func data(from jsonDic:Dictionary<String, Any>) -> Data {}|字典转二进制|
+ |class func dictionary(from data:Data) -> Dictionary<String, Any> {}|二进制转字典|
+ |class func data(from array:Array<Any>) -> Data {}|数组转data|
+ |class func array(from data:Data) -> Array<Any> {}|data转数组|
+ 
+ 
  
  ## 硬件
  关于硬件方面我分了一下几个方面

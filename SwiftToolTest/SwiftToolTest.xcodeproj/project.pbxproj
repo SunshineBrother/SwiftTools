@@ -26,6 +26,8 @@
 		285BA82A209462D700735E74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA829209462D700735E74 /* Model.swift */; };
 		2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2820ABC40A00A60E53 /* DictionaryController.swift */; };
 		2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */; };
+		2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3420ABD90400A60E53 /* ValueChange.swift */; };
+		2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3620ABD94600A60E53 /* ValueChangeController.swift */; };
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
@@ -77,6 +79,8 @@
 		285BA829209462D700735E74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2880CE2820ABC40A00A60E53 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JHExtension.swift"; sourceTree = "<group>"; };
+		2880CE3420ABD90400A60E53 /* ValueChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChange.swift; sourceTree = "<group>"; };
+		2880CE3620ABD94600A60E53 /* ValueChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChangeController.swift; sourceTree = "<group>"; };
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				283743FD20AA73C2008F1ED1 /* StringController.swift */,
 				2837440C20AB00EF008F1ED1 /* ArrayController.swift */,
 				2880CE2820ABC40A00A60E53 /* DictionaryController.swift */,
+				2880CE3620ABD94600A60E53 /* ValueChangeController.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				2837440020AA7447008F1ED1 /* String+JHExtension.swift */,
 				2837440E20AB0109008F1ED1 /* Array+JHExtension.swift */,
 				2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */,
+				2880CE3420ABD90400A60E53 /* ValueChange.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -443,7 +449,9 @@
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
 				283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */,
 				2837440D20AB00EF008F1ED1 /* ArrayController.swift in Sources */,
+				2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */,
 				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
+				2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -63,9 +63,9 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>json转化</string>
+			<string>值类型转化</string>
 			<key>Class</key>
-			<string>jsonController</string>
+			<string>ValueChangeController</string>
 		</dict>
 		<dict>
 			<key>Title</key>
