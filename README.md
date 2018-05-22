@@ -100,7 +100,29 @@
  |class func data(from array:Array<Any>) -> Data {}|数组转data|
  |class func array(from data:Data) -> Array<Any> {}|data转数组|
  
+  ### Date扩展
+  #### 存储属性
+  |名称|说明|
+  |---|:---:|
+  |CurrentStingTime|获取当前时间字符串|
+  |CurrentDateTime|获取当前时间 date|
+  |CurrentStampTime|获取当前时间戳|
+  |year|年|
+  |month|月|
+  |day|日|
+  |weekday|周几|
+  |isFuture|是否在将来|
+  |isPast|是否在过去|
+  |isToday|是否是今天|
+  |isTomorrow|是否是昨天|
+  
+#### 方法
+|名称|说明|
+|---|:---:|
+|func StampTime(from date:Date) ->  u_long{}|date 转化为时间戳|
+|func date(from StampTime:u_long) -> Date {}|时间戳转化为date|
  
+  
  
  ## 硬件
  关于硬件方面我分了一下几个方面

@@ -32,6 +32,8 @@
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
+		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
+		28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03E20B3C45100278692 /* Date+JHExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
+		28FBB03E20B3C45100278692 /* Date+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+JHExtension.swift"; sourceTree = "<group>"; };
 		34A63E706368C3EE93350ADF /* Pods-SwiftToolTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftToolTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +145,7 @@
 				2837440C20AB00EF008F1ED1 /* ArrayController.swift */,
 				2880CE2820ABC40A00A60E53 /* DictionaryController.swift */,
 				2880CE3620ABD94600A60E53 /* ValueChangeController.swift */,
+				28FBB03A20B3C25B00278692 /* TimeController.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				2837440E20AB0109008F1ED1 /* Array+JHExtension.swift */,
 				2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */,
 				2880CE3420ABD90400A60E53 /* ValueChange.swift */,
+				28FBB03E20B3C45100278692 /* Date+JHExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -441,8 +447,10 @@
 				2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */,
 				285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */,
 				2837440F20AB0109008F1ED1 /* Array+JHExtension.swift in Sources */,
+				28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */,
 				2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
+				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
 				285BA82820944E6500735E74 /* TableViewController.swift in Sources */,
 				28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */,
