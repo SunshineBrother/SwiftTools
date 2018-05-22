@@ -41,6 +41,40 @@
   |placeHolder|设置placeHolder的颜色|
  
  
+### UIView
+
+#### 计算属性
+|名称|说明|
+|---|:---:|
+|ViewID|String|
+|ViewParam|Dictionary<String, Any>?|
+
+#### 存储属性
+|名称|说明|
+|---|:---:|
+|W|宽|
+|H|高|
+|X|X|
+|Y|Y|
+|centerX|centerX|
+|centerY|centerY|
+ 
+#### 方法
+|名称|说明|
+|---|:---:|
+|removeAllChildView|移除所有子视图|
+|public func addCornerRadius(radius: CGFloat) {}|设置圆角|
+| public func addBorder(width: CGFloat, color: UIColor) {}|设置边框|
+|public func addBorderTop(size: CGFloat, color: UIColor) {}|设置顶部边框|
+|public func addBorderBottom(size: CGFloat, color: UIColor) {}|设置底部边框|
+|public func addBorderLeft(size: CGFloat, color: UIColor) {}|设置左侧边框|
+|public func addBorderRight(size: CGFloat, color: UIColor) {}|设置右侧边框|
+|public func toImage () -> UIImage {}|view截图为image|
+ 
+
+
+
+ 
 ## UIFoundation
 ### String扩展
 #### 属性
