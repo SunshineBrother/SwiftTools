@@ -72,7 +72,14 @@
 |public func toImage () -> UIImage {}|view截图为image|
  
 
-
+### UILabel扩展
+|名称|说明|
+|---|:---:|
+|WordSpace|字间距|
+|LineSpace|行间距|
+|topText|是否让文本居左上|
+|isCopyable|是否拥有复制功能|
+ 
 
  
 ## UIFoundation

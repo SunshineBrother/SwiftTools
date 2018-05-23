@@ -35,7 +35,7 @@ extension UIView {
             return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewParam!) as? Dictionary
         }
     }
- 
+    
 }
 
 //MARK:-- 添加存储属性 --
@@ -70,13 +70,13 @@ extension UIView {
 //MARK:-- 添加方法 --
 extension UIView {
     /// 移除所有子视图
-    public func removeSubviews() {
-        for subview in subviews {
-            subview.removeFromSuperview()
+    public func removeAllChildView() {
+        _ = self.subviews.map {
+            $0.removeFromSuperview()
         }
     }
     /// 设置圆角
-    public func setCornerRadius(radius: CGFloat) {
+    public func addCornerRadius(radius: CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
     }
@@ -86,18 +86,19 @@ extension UIView {
         layer.borderColor = color.cgColor
         layer.masksToBounds = true
     }
-    ///设置边框
+    ///设置顶部边框
     public func addBorderTop(size: CGFloat, color: UIColor) {
         addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
     }
+    /// 设置底部边框
     public func addBorderBottom(size: CGFloat, color: UIColor) {
         addBorderUtility(x: 0, y: frame.height - size, width: frame.width, height: size, color: color)
     }
-
+    /// 设置左侧边框
     public func addBorderLeft(size: CGFloat, color: UIColor) {
         addBorderUtility(x: 0, y: 0, width: size, height: frame.height, color: color)
     }
-    
+    /// 设置右侧边框
     public func addBorderRight(size: CGFloat, color: UIColor) {
         addBorderUtility(x: frame.width - size, y: 0, width: size, height: frame.height, color: color)
     }
@@ -108,7 +109,6 @@ extension UIView {
         border.frame = CGRect(x: x, y: y, width: width, height: height)
         layer.addSublayer(border)
     }
-    
     
     /// view截图为image
     public func toImage () -> UIImage {

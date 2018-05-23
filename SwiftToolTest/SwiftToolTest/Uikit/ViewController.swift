@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        View1.setCornerRadius(radius: 10)
+        View1.addCornerRadius(radius: 10)
         View1.addBorder(width: 3, color: UIColor.red)
         
         View2.addBorderBottom(size: 3, color: UIColor.red)
