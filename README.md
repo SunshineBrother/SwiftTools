@@ -3,7 +3,7 @@
 
 ![UITextField](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UITextField.gif)
 ![UITextView](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UITextView.gif)
-
+![UILabel扩展](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UILabel扩展.gif)
 
 
 
