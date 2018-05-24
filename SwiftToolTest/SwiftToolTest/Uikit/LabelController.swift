@@ -4,7 +4,7 @@
 //
 //  Created by yunna on 2018/5/22.
 //  Copyright © 2018年 yunna. All rights reserved.
-//
+//Copyright © 2018年 yunna. All rights reserved.
 
 import UIKit
 
@@ -18,6 +18,10 @@ class LabelController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        
+        
+        
+        
  
         Label.WordSpace = 10
         Label.text = text
