@@ -79,6 +79,22 @@
 |LineSpace|行间距|
 |topText|是否让文本居左上|
 |isCopyable|是否拥有复制功能|
+
+ ### UIButton扩展
+ |名称|说明|
+ |---|:---:|
+ |func setTitleColor(normolColor:UIColor,selectColor:UIColor)  {}|设置选中状态文字颜色|
+ |func setImage(normolImge:UIImage,selectImage:UIImage)  {}|设置选择状态和未选中状态的image|
+ |func setTitleWithTitleColor(title:String,titleColor:UIColor)  {}|设置未选择状态的title和col|
+ |func setTitleWithImage(title:String,image:UIImage) {}|设置title&image|
+ |timeInterval|连续两次点击相差时间|
+ |topEdge,leftEdge,rightEdge,bottomEdge|点击区域|
+ |func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat)  {}|扩大点击区域|
+ |func setImageFrontTextWithCenterAlignment(imageWidth:CGFloat, space:CGFloat)  {}|整体在中间 image在左 title在右|
+ |func setImageFrontTextWithLeftAlignment(imageWidth:CGFloat, space:CGFloat,buttonWidth : CGFloat)  {}|整体在最左侧   image在左 title在右|
+ |func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat)  {}|上下结构 image在上 label在下|
+ 
+ 
  
 
  

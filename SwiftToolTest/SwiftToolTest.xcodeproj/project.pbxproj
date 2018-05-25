@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1A098AC6B5597D759821AEDE /* Pods_SwiftToolTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D555B51ED5F2A22514749B8 /* Pods_SwiftToolTest.framework */; };
+		280DD3AE20B7B67900F2276A /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3AC20B7B67900F2276A /* ButtonController.swift */; };
+		280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280DD3AD20B7B67900F2276A /* ButtonController.xib */; };
+		280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */; };
+		280DD3B320B7DC2800F2276A /* UIImage+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */; };
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
@@ -65,6 +69,10 @@
 /* Begin PBXFileReference section */
 		0D555B51ED5F2A22514749B8 /* Pods_SwiftToolTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftToolTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC0B7EF0546F9ED0D80B828 /* Pods-SwiftToolTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftToolTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest.release.xcconfig"; sourceTree = "<group>"; };
+		280DD3AC20B7B67900F2276A /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
+		280DD3AD20B7B67900F2276A /* ButtonController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonController.xib; sourceTree = "<group>"; };
+		280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+JHExtension.swift"; sourceTree = "<group>"; };
+		280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+JHExtension.swift"; sourceTree = "<group>"; };
 		2810F0B820A2CA4600934AE4 /* SwiftToolTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
@@ -144,6 +152,8 @@
 				28FBB04620B40BFA00278692 /* UIView+JHExtension.swift */,
 				28FBB05020B419A300278692 /* UILabel+JHExtension.swift */,
 				286786B420B43EC600209F55 /* JHLabel.swift */,
+				280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */,
+				280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */,
 			);
 			path = UiKit;
 			sourceTree = "<group>";
@@ -159,6 +169,8 @@
 				28FBB04920B4131C00278692 /* ViewController.xib */,
 				28FBB04C20B4195E00278692 /* LabelController.swift */,
 				28FBB04D20B4195E00278692 /* LabelController.xib */,
+				280DD3AC20B7B67900F2276A /* ButtonController.swift */,
+				280DD3AD20B7B67900F2276A /* ButtonController.xib */,
 			);
 			path = Uikit;
 			sourceTree = "<group>";
@@ -396,6 +408,7 @@
 				2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */,
 				285BA8002094457D00735E74 /* LaunchScreen.storyboard in Resources */,
 				28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */,
+				280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */,
 				285BA7FD2094457D00735E74 /* Assets.xcassets in Resources */,
 				285BA7FB2094457C00735E74 /* Main.storyboard in Resources */,
 			);
@@ -472,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285BA82A209462D700735E74 /* Model.swift in Sources */,
+				280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */,
 				2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */,
 				28FBB04720B40BFA00278692 /* UIView+JHExtension.swift in Sources */,
 				28FBB04320B403A400278692 /* JHRegularHelp.swift in Sources */,
@@ -496,6 +510,8 @@
 				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
 				2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */,
 				286786B520B43EC600209F55 /* JHLabel.swift in Sources */,
+				280DD3AE20B7B67900F2276A /* ButtonController.swift in Sources */,
+				280DD3B320B7DC2800F2276A /* UIImage+JHExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
