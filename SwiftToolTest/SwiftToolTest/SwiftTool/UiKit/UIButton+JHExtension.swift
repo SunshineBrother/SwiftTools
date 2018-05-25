@@ -227,7 +227,6 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: space
-
     func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat)  {
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
