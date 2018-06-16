@@ -12,6 +12,8 @@
 		280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280DD3AD20B7B67900F2276A /* ButtonController.xib */; };
 		280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */; };
 		280DD3B320B7DC2800F2276A /* UIImage+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */; };
+		2810F96F20BE8E9200ACCE11 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810F96D20BE8E9200ACCE11 /* ImageController.swift */; };
+		2810F97020BE8E9200ACCE11 /* ImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2810F96E20BE8E9200ACCE11 /* ImageController.xib */; };
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
@@ -74,6 +76,8 @@
 		280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+JHExtension.swift"; sourceTree = "<group>"; };
 		280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+JHExtension.swift"; sourceTree = "<group>"; };
 		2810F0B820A2CA4600934AE4 /* SwiftToolTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		2810F96D20BE8E9200ACCE11 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		2810F96E20BE8E9200ACCE11 /* ImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageController.xib; sourceTree = "<group>"; };
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		2828282020A1BA2900D40C92 /* TextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldController.xib; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				28FBB04D20B4195E00278692 /* LabelController.xib */,
 				280DD3AC20B7B67900F2276A /* ButtonController.swift */,
 				280DD3AD20B7B67900F2276A /* ButtonController.xib */,
+				2810F96D20BE8E9200ACCE11 /* ImageController.swift */,
+				2810F96E20BE8E9200ACCE11 /* ImageController.xib */,
 			);
 			path = Uikit;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				285BA8002094457D00735E74 /* LaunchScreen.storyboard in Resources */,
 				28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */,
 				280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */,
+				2810F97020BE8E9200ACCE11 /* ImageController.xib in Resources */,
 				285BA7FD2094457D00735E74 /* Assets.xcassets in Resources */,
 				285BA7FB2094457C00735E74 /* Main.storyboard in Resources */,
 			);
@@ -492,6 +499,7 @@
 				28FBB05120B419A300278692 /* UILabel+JHExtension.swift in Sources */,
 				28FBB04A20B4131C00278692 /* ViewController.swift in Sources */,
 				2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */,
+				2810F96F20BE8E9200ACCE11 /* ImageController.swift in Sources */,
 				285BA7F62094457C00735E74 /* AppDelegate.swift in Sources */,
 				2837440F20AB0109008F1ED1 /* Array+JHExtension.swift in Sources */,
 				28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */,

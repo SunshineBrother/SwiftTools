@@ -77,6 +77,19 @@ extension String{
     func split(string:String) -> [String] {
         return NSString(string: self).components(separatedBy: string)
     }
+    ///从字符串中提取数字
+    public func getIntFromString() -> NSInteger {
+        let list = NSMutableArray()
+        for c in self {
+            if (c >= "0") && (c <= "9"){
+                list.add(String(c))
+            }
+        }
+        let k = list.componentsJoined(by: "")
+        let w = NSInteger(k) ?? 0
+        
+        return w
+    }
  
 }
 

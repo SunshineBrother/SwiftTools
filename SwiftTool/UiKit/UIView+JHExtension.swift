@@ -41,28 +41,32 @@ extension UIView {
 //MARK:-- 添加存储属性 --
 extension UIView {
     /// 宽
-    public var W: Float {
-        return Float(self.bounds.size.width)
+    public var W: CGFloat {
+        return self.bounds.size.width
     }
     /// 高
-    public var H: Float {
-        return Float(self.bounds.size.height)
+    public var H: CGFloat {
+        return self.bounds.size.height
     }
     /// X
-    public var X: Float {
-        return Float(self.frame.origin.x)
+    public var X: CGFloat {
+        return self.frame.origin.x
     }
     /// Y
-    public var Y: Float {
-        return Float(self.frame.origin.y)
+    public var Y: CGFloat {
+        return self.frame.origin.y
+    }
+    /// bottom
+    public var bottom:CGFloat{
+        return Y+H
     }
     /// centerX
-    public var centerX: Float {
-        return Float(self.center.x)
+    public var centerX: CGFloat {
+        return self.center.x
     }
     /// centerY
-    public var centerY: Float {
-        return Float(self.center.y)
+    public var centerY: CGFloat {
+        return self.center.y
     }
     
     
