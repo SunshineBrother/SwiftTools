@@ -85,6 +85,12 @@
 			<key>Class</key>
 			<string>regularController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Color扩展</string>
+			<key>Class</key>
+			<string>ColorController</string>
+		</dict>
 	</array>
 	<key>animation</key>
 	<array>

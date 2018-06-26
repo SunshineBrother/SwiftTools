@@ -194,6 +194,19 @@
 |func IdCardIsValidated(vStr: String) -> Bool {}|验证身份证号|
  
  
+ ### 颜色扩展
+ |名称|说明|
+ |---|:---:|
+ |random|随机色|
+ |RGBA|RGBA|
+ |rgb|rgb|
+ |hex|UIColor转化为16进制|
+ 
+ 
+ 
+ 
+ 
+ 
  ## 硬件
  关于硬件方面我分了一下几个方面
  - 1、各种权限获取，以及跳转的相应设置

@@ -14,6 +14,9 @@
 		280DD3B320B7DC2800F2276A /* UIImage+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */; };
 		2810F96F20BE8E9200ACCE11 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810F96D20BE8E9200ACCE11 /* ImageController.swift */; };
 		2810F97020BE8E9200ACCE11 /* ImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2810F96E20BE8E9200ACCE11 /* ImageController.xib */; };
+		2816532120E1DDCE00D29673 /* Color+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816532020E1DDCE00D29673 /* Color+JHExtension.swift */; };
+		2816532420E1E49000D29673 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816532220E1E49000D29673 /* ColorController.swift */; };
+		2816532520E1E49000D29673 /* ColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2816532320E1E49000D29673 /* ColorController.xib */; };
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
@@ -78,6 +81,9 @@
 		2810F0B820A2CA4600934AE4 /* SwiftToolTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftToolTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		2810F96D20BE8E9200ACCE11 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		2810F96E20BE8E9200ACCE11 /* ImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageController.xib; sourceTree = "<group>"; };
+		2816532020E1DDCE00D29673 /* Color+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+JHExtension.swift"; sourceTree = "<group>"; };
+		2816532220E1E49000D29673 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		2816532320E1E49000D29673 /* ColorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorController.xib; sourceTree = "<group>"; };
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		2828282020A1BA2900D40C92 /* TextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldController.xib; sourceTree = "<group>"; };
@@ -190,6 +196,8 @@
 				2880CE3620ABD94600A60E53 /* ValueChangeController.swift */,
 				28FBB03A20B3C25B00278692 /* TimeController.swift */,
 				28FBB04420B4061A00278692 /* regularController.swift */,
+				2816532220E1E49000D29673 /* ColorController.swift */,
+				2816532320E1E49000D29673 /* ColorController.xib */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 				2880CE3420ABD90400A60E53 /* ValueChange.swift */,
 				28FBB03E20B3C45100278692 /* Date+JHExtension.swift */,
 				28FBB04220B403A400278692 /* JHRegularHelp.swift */,
+				2816532020E1DDCE00D29673 /* Color+JHExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -408,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2816532520E1E49000D29673 /* ColorController.xib in Resources */,
 				28FBB04F20B4195E00278692 /* LabelController.xib in Resources */,
 				28FBB04B20B4131C00278692 /* ViewController.xib in Resources */,
 				285BA8262094471F00735E74 /* swiftTool.plist in Resources */,
@@ -493,6 +503,7 @@
 			files = (
 				285BA82A209462D700735E74 /* Model.swift in Sources */,
 				280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */,
+				2816532420E1E49000D29673 /* ColorController.swift in Sources */,
 				2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */,
 				28FBB04720B40BFA00278692 /* UIView+JHExtension.swift in Sources */,
 				28FBB04320B403A400278692 /* JHRegularHelp.swift in Sources */,
@@ -508,6 +519,7 @@
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
+				2816532120E1DDCE00D29673 /* Color+JHExtension.swift in Sources */,
 				285BA82820944E6500735E74 /* TableViewController.swift in Sources */,
 				28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */,
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
