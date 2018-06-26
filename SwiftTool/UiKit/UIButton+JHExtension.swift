@@ -104,7 +104,7 @@ extension UIButton {
     var topEdge: CGFloat? {
         set {
             objc_setAssociatedObject(self, RunTimeButtonKey.topNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            UIButton.changeFunction
+            
         }
         
         get {
@@ -115,7 +115,7 @@ extension UIButton {
     var leftEdge: CGFloat? {
         set {
             objc_setAssociatedObject(self, RunTimeButtonKey.leftNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            UIButton.changeFunction
+            
         }
         
         get {
@@ -126,7 +126,7 @@ extension UIButton {
     var rightEdge: CGFloat? {
         set {
             objc_setAssociatedObject(self, RunTimeButtonKey.rightNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            UIButton.changeFunction
+           
         }
         
         get {
@@ -138,7 +138,7 @@ extension UIButton {
     var bottomEdge: CGFloat? {
         set {
             objc_setAssociatedObject(self, RunTimeButtonKey.bottomNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            UIButton.changeFunction
+           
         }
         
         get {
@@ -169,11 +169,18 @@ extension UIButton {
         let bottom = self.bottomEdge ?? 0
         let top = self.topEdge ?? 0
         
-        let rect:CGRect = CGRect(x: self.bounds.origin.x - left,
-                                 y: self.bounds.origin.y - top,
-                                 width: self.bounds.size.width + left + right, height: self.bounds.size.height + top + bottom)
+        var rect:CGRect
+        if left > 0 || right > 0 || bottom > 0 || top > 0 {
+            rect = CGRect(x: self.bounds.origin.x - left,
+                                     y: self.bounds.origin.y - top,
+                                     width: self.bounds.size.width + left + right, height: self.bounds.size.height + top + bottom)
+        }else{
+            rect = self.bounds
+        }
         
-        
+        if rect.contains(self.bounds) {
+            return super.hitTest(point, with: event)
+        }
         return rect.contains(point) ? self : nil
     }
     
@@ -227,7 +234,6 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: space
-
     func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat)  {
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
