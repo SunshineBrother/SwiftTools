@@ -6,4 +6,6 @@ pod 'MJRefresh'
 pod 'MBProgressHUD'
 pod 'DZNEmptyDataSet'
 pod 'IQKeyboardManager'
+pod 'YYCache'
+pod 'Moya'
 end

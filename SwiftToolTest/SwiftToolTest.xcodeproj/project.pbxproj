@@ -41,6 +41,8 @@
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
+		28EC7CE520E3318B006C0CF1 /* MBProgressHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */; };
+		28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
 		28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03E20B3C45100278692 /* Date+JHExtension.swift */; };
@@ -114,6 +116,8 @@
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDController.swift; sourceTree = "<group>"; };
+		28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProgressHUD.swift; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
 		28FBB03E20B3C45100278692 /* Date+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+JHExtension.swift"; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 				285BA829209462D700735E74 /* Model.swift */,
 				283743FC20AA733E008F1ED1 /* Foundation */,
 				2828281C20A1B9E100D40C92 /* Uikit */,
+				28EC7CDE20E33092006C0CF1 /* ThirdParty */,
 				285BA7F92094457C00735E74 /* Main.storyboard */,
 				285BA7FC2094457D00735E74 /* Assets.xcassets */,
 				285BA7FE2094457D00735E74 /* LaunchScreen.storyboard */,
@@ -275,9 +280,27 @@
 			path = SwiftToolTestUITests;
 			sourceTree = "<group>";
 		};
+		28EC7CDD20E3308A006C0CF1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		28EC7CDE20E33092006C0CF1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */,
+			);
+			name = ThirdParty;
+			path = SwiftToolTest/ThirdParty;
+			sourceTree = SOURCE_ROOT;
+		};
 		28EF5B8B2099D8500026D1E0 /* SwiftTool */ = {
 			isa = PBXGroup;
 			children = (
+				28EC7CDD20E3308A006C0CF1 /* ThirdParty */,
 				283743FF20AA7420008F1ED1 /* Foundation */,
 				2828281920A1B82800D40C92 /* UiKit */,
 				28EF5B8C2099D8500026D1E0 /* Hardware */,
@@ -455,21 +478,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285BA82A209462D700735E74 /* Model.swift in Sources */,
+				28EC7CE520E3318B006C0CF1 /* MBProgressHUDController.swift in Sources */,
 				280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */,
 				2816532420E1E49000D29673 /* ColorController.swift in Sources */,
 				2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */,
@@ -515,6 +547,7 @@
 				2837440F20AB0109008F1ED1 /* Array+JHExtension.swift in Sources */,
 				28FBB03F20B3C45100278692 /* Date+JHExtension.swift in Sources */,
 				2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */,
+				28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */,
 				28FBB04520B4061A00278692 /* regularController.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,

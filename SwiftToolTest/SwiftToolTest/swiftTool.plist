@@ -180,9 +180,9 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>FMDB</string>
+			<string>YYCache</string>
 			<key>Class</key>
-			<string>FMDBController</string>
+			<string>YYCacheController</string>
 		</dict>
 	</array>
 </dict>
