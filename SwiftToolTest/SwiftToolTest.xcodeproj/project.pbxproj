@@ -17,6 +17,8 @@
 		2816532120E1DDCE00D29673 /* Color+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816532020E1DDCE00D29673 /* Color+JHExtension.swift */; };
 		2816532420E1E49000D29673 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816532220E1E49000D29673 /* ColorController.swift */; };
 		2816532520E1E49000D29673 /* ColorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2816532320E1E49000D29673 /* ColorController.xib */; };
+		282316AD20E63C4F004B4DEC /* MBProgressHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282316AB20E63C4F004B4DEC /* MBProgressHUDController.swift */; };
+		282316AE20E63C4F004B4DEC /* MBProgressHUDController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282316AC20E63C4F004B4DEC /* MBProgressHUDController.xib */; };
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
@@ -41,7 +43,6 @@
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
-		28EC7CE520E3318B006C0CF1 /* MBProgressHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */; };
 		28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
@@ -86,6 +87,8 @@
 		2816532020E1DDCE00D29673 /* Color+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+JHExtension.swift"; sourceTree = "<group>"; };
 		2816532220E1E49000D29673 /* ColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 		2816532320E1E49000D29673 /* ColorController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorController.xib; sourceTree = "<group>"; };
+		282316AB20E63C4F004B4DEC /* MBProgressHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDController.swift; sourceTree = "<group>"; };
+		282316AC20E63C4F004B4DEC /* MBProgressHUDController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBProgressHUDController.xib; sourceTree = "<group>"; };
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		2828282020A1BA2900D40C92 /* TextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldController.xib; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
-		28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProgressHUDController.swift; sourceTree = "<group>"; };
 		28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProgressHUD.swift; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
@@ -291,7 +293,8 @@
 		28EC7CDE20E33092006C0CF1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				28EC7CE420E3318B006C0CF1 /* MBProgressHUDController.swift */,
+				282316AB20E63C4F004B4DEC /* MBProgressHUDController.swift */,
+				282316AC20E63C4F004B4DEC /* MBProgressHUDController.xib */,
 			);
 			name = ThirdParty;
 			path = SwiftToolTest/ThirdParty;
@@ -445,6 +448,7 @@
 				28FBB04B20B4131C00278692 /* ViewController.xib in Resources */,
 				285BA8262094471F00735E74 /* swiftTool.plist in Resources */,
 				2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */,
+				282316AE20E63C4F004B4DEC /* MBProgressHUDController.xib in Resources */,
 				285BA8002094457D00735E74 /* LaunchScreen.storyboard in Resources */,
 				28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */,
 				280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */,
@@ -533,7 +537,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				285BA82A209462D700735E74 /* Model.swift in Sources */,
-				28EC7CE520E3318B006C0CF1 /* MBProgressHUDController.swift in Sources */,
 				280DD3B120B7B6A800F2276A /* UIButton+JHExtension.swift in Sources */,
 				2816532420E1E49000D29673 /* ColorController.swift in Sources */,
 				2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */,
@@ -560,6 +563,7 @@
 				2837440D20AB00EF008F1ED1 /* ArrayController.swift in Sources */,
 				28FBB04E20B4195E00278692 /* LabelController.swift in Sources */,
 				2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */,
+				282316AD20E63C4F004B4DEC /* MBProgressHUDController.swift in Sources */,
 				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
 				2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */,
 				286786B520B43EC600209F55 /* JHLabel.swift in Sources */,
