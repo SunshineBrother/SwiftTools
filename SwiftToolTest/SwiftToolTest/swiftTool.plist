@@ -164,13 +164,13 @@
 			<key>Title</key>
 			<string>MJRefresh</string>
 			<key>Class</key>
-			<string>MJRefreshController</string>
+			<string>ThirdScrollController</string>
 		</dict>
 		<dict>
 			<key>Title</key>
 			<string>DZNEmptyDataSet</string>
 			<key>Class</key>
-			<string>EmptyDataSetController</string>
+			<string>ThirdScrollController</string>
 		</dict>
 		<dict>
 			<key>Title</key>

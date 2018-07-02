@@ -213,6 +213,43 @@
  |class func ShowloadingWithMessage(text:String?,touch:Bool? = false) {}|加载框|
  |class func dismissHUD()  {}|隐藏 加载框|
  
+  ### MJRefresh封装
+  我这里对MJRefresh进行了封装，其实是对UIScrollView的扩展，我们在使用的时候不需要一遍一遍的创建，只需要调用一个方法就可以了
+  ```
+  self.tableView.addRefreshWithScrollView(refreshHeaderClosure: {
+  //头部刷新
+  }) {
+  //底部刷新
+  }
+  ```
+  |名称|说明|
+  |---|:---:|
+  |func addRefreshWithScrollView(refreshHeaderClosure:@escaping()->(), refreshFooterClosure:@escaping()->())  {}|添加刷新事件|
+  |func addRefreshHeaderWithScrollView(refreshClosure:@escaping()->()) {}|添加头部刷新事件|
+  |func addRefreshFooterWithScrollView(refreshClosure:@escaping()->()) {}|添加底部刷新事件|
+  |func endRefreshWithTableView() {}|结束刷新|
+  |func NOMoreData() {}|没有数据|
+  
+
+### DZNEmptyDataSet封装
+
+|名称|说明|
+|---|:---:|
+|emptyText|空数据显示内容|
+|emptyImage|空数据的图片|
+|垂直偏移量|offset|
+|obtainClickClosure|点击闭包回调|
+    
+这个封装使用起来也是非常的简单
+```
+//空白数据的时候
+self.tableView.emptyText = "空白数据"
+self.tableView.obtainClickClosure {
+//点击空白的回调
+}
+```
+    
+  
  
  ## 硬件
  关于硬件方面我分了一下几个方面

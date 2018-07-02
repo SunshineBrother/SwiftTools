@@ -22,6 +22,8 @@
 		2828281B20A1B86200D40C92 /* UITextField+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */; };
 		2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828281F20A1BA2900D40C92 /* TextFieldController.swift */; };
 		2828282220A1BA2900D40C92 /* TextFieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2828282020A1BA2900D40C92 /* TextFieldController.xib */; };
+		282A289E20E9C6670053BEC3 /* ScrollView+JHRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A289C20E9C6670053BEC3 /* ScrollView+JHRefresh.swift */; };
+		282A289F20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A289D20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift */; };
 		283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283743FD20AA73C2008F1ED1 /* StringController.swift */; };
 		2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2837440020AA7447008F1ED1 /* String+JHExtension.swift */; };
 		2837440D20AB00EF008F1ED1 /* ArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2837440C20AB00EF008F1ED1 /* ArrayController.swift */; };
@@ -40,6 +42,7 @@
 		2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */; };
 		2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3420ABD90400A60E53 /* ValueChange.swift */; };
 		2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3620ABD94600A60E53 /* ValueChangeController.swift */; };
+		2887F05520E9C853003403CD /* ThirdScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887F05420E9C853003403CD /* ThirdScrollController.swift */; };
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
@@ -92,6 +95,8 @@
 		2828281A20A1B86200D40C92 /* UITextField+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+JHExtension.swift"; sourceTree = "<group>"; };
 		2828281F20A1BA2900D40C92 /* TextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldController.swift; sourceTree = "<group>"; };
 		2828282020A1BA2900D40C92 /* TextFieldController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldController.xib; sourceTree = "<group>"; };
+		282A289C20E9C6670053BEC3 /* ScrollView+JHRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollView+JHRefresh.swift"; sourceTree = "<group>"; };
+		282A289D20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScrollView+JHEmptyDataSet.swift"; sourceTree = "<group>"; };
 		283743FD20AA73C2008F1ED1 /* StringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringController.swift; sourceTree = "<group>"; };
 		2837440020AA7447008F1ED1 /* String+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JHExtension.swift"; sourceTree = "<group>"; };
 		2837440C20AB00EF008F1ED1 /* ArrayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayController.swift; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JHExtension.swift"; sourceTree = "<group>"; };
 		2880CE3420ABD90400A60E53 /* ValueChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChange.swift; sourceTree = "<group>"; };
 		2880CE3620ABD94600A60E53 /* ValueChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChangeController.swift; sourceTree = "<group>"; };
+		2887F05420E9C853003403CD /* ThirdScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScrollController.swift; sourceTree = "<group>"; };
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
@@ -285,6 +291,8 @@
 		28EC7CDD20E3308A006C0CF1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				282A289D20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift */,
+				282A289C20E9C6670053BEC3 /* ScrollView+JHRefresh.swift */,
 				28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */,
 			);
 			path = ThirdParty;
@@ -295,6 +303,7 @@
 			children = (
 				282316AB20E63C4F004B4DEC /* MBProgressHUDController.swift */,
 				282316AC20E63C4F004B4DEC /* MBProgressHUDController.xib */,
+				2887F05420E9C853003403CD /* ThirdScrollController.swift */,
 			);
 			name = ThirdParty;
 			path = SwiftToolTest/ThirdParty;
@@ -552,6 +561,7 @@
 				2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */,
 				28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */,
 				28FBB04520B4061A00278692 /* regularController.swift in Sources */,
+				282A289F20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
@@ -559,8 +569,10 @@
 				285BA82820944E6500735E74 /* TableViewController.swift in Sources */,
 				28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */,
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
+				2887F05520E9C853003403CD /* ThirdScrollController.swift in Sources */,
 				283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */,
 				2837440D20AB00EF008F1ED1 /* ArrayController.swift in Sources */,
+				282A289E20E9C6670053BEC3 /* ScrollView+JHRefresh.swift in Sources */,
 				28FBB04E20B4195E00278692 /* LabelController.swift in Sources */,
 				2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */,
 				282316AD20E63C4F004B4DEC /* MBProgressHUDController.swift in Sources */,
