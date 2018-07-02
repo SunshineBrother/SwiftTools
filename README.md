@@ -204,7 +204,14 @@
  
  
  
- 
+ ## UIFoundation
+ ### MBProgressHUD封装
+ 这里就有三个简单的方法
+ |名称|说明|
+ |---|:---:|
+ |class func ShowMessage(text:String,touch:Bool? = false,afterDelay:TimeInterval? = 1.0) {}|提示文本|
+ |class func ShowloadingWithMessage(text:String?,touch:Bool? = false) {}|加载框|
+ |class func dismissHUD()  {}|隐藏 加载框|
  
  
  ## 硬件
