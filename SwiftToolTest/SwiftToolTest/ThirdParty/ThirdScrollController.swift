@@ -20,17 +20,18 @@ class ThirdScrollController: UIViewController,UITableViewDelegate,UITableViewDat
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.view.addSubview(tableView)
-        
+        //空白数据的时候
+        self.tableView.addEmpty(text: "空白数据", image: "Head", offSet: 0)
+        self.tableView.obtainClickClosure {
+            //点击空白的回调
+            print("点击空白的回调")
+        }
         self.tableView.addRefreshWithScrollView(refreshHeaderClosure: {
             //头部刷新
         }) {
             //底部刷新
         }
-        //空白数据的时候
-        self.tableView.emptyText = "空白数据"
-        self.tableView.obtainClickClosure {
-            //点击空白的回调
-        }
+       
        
     }
 

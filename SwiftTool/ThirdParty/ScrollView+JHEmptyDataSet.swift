@@ -23,7 +23,7 @@ struct RuntimeKey {
 //MARK: -- 给UIScrollView添加属性 --
 extension UIScrollView {
     ///空数据显示内容
-    var emptyText: String? {
+   private var emptyText: String? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.emptyText!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -33,7 +33,7 @@ extension UIScrollView {
         }
     }
     ///空数据的图片
-    var emptyImage: String? {
+   private var emptyImage: String? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.emptyImage!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -44,7 +44,7 @@ extension UIScrollView {
     }
     
     ///垂直偏移量
-    var offset: CGFloat? {
+   private var offset: CGFloat? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.offset!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -87,7 +87,7 @@ extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
     ///   - text: text
     ///   - image: image
     ///   - offSet: 偏移量
-    func SetUPEmptyTextWithEmptyImageWithOffSet(text:String,image:String,offSet:CGFloat) {
+    func addEmptyTextWithEmptyImageWithOffSet(text:String,image:String,offSet:CGFloat) {
         self.emptyText = text
         self.emptyImage = image
         self.offset = offSet
@@ -102,7 +102,7 @@ extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
     ///   - text: text
     ///   - image: image
     ///
-    func SetUPEmptyTextWithEmptyImage(text:String,image:String){
+    func addEmptyTextWithEmptyImage(text:String,image:String){
         self.emptyText = text
         self.emptyImage = image
         
@@ -115,7 +115,7 @@ extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
     /// 仅仅设置空白页图片
     ///
     /// - image: image
-    func SetUPEmptyText(image:String){
+    func addEmptyText(image:String){
          self.emptyImage = image
          self.emptyDataSetDelegate = self
          self.emptyDataSetSource = self
@@ -125,7 +125,7 @@ extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
     /// 仅仅设置空白页文本
     ///
     /// - Parameter text: text
-    func SetUPEmptyText(text:String){
+    func addEmptyText(text:String){
         self.emptyText = text
         self.emptyDataSetDelegate = self
         self.emptyDataSetSource = self

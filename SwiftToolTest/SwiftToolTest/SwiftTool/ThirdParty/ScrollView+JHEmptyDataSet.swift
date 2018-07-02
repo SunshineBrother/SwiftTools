@@ -9,6 +9,92 @@
 import UIKit
 import DZNEmptyDataSet
 
+//MARK: -- 给UIScrollView添加方法 --
+extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
+    
+    
+    func addEmpty(text:String? = nil,image:String? = nil,offSet:CGFloat? = 0) {
+        if text != nil {
+            self.emptyText = text
+        }
+        
+        if image != nil {
+            self.emptyImage = image
+        }
+        
+        if offSet != 0 {
+            self.offset = offSet
+        }
+        
+        
+        self.emptyDataSetDelegate = self
+        self.emptyDataSetSource = self
+    }
+    
+    
+    /// 设置空白页text。image。偏移量
+    ///
+    /// - Parameters:
+    ///   - text: text
+    ///   - image: image
+    ///   - offSet: 偏移量
+    func addEmpty(text:String,image:String,offSet:CGFloat) {
+        self.emptyText = text
+        self.emptyImage = image
+        self.offset = offSet
+        
+        self.emptyDataSetDelegate = self
+        self.emptyDataSetSource = self
+    }
+    
+    /// 设置空白页text。image
+    ///
+    /// - Parameters:
+    ///   - text: text
+    ///   - image: image
+    ///
+    func addEmpty(text:String,image:String){
+        self.emptyText = text
+        self.emptyImage = image
+        
+        
+        self.emptyDataSetDelegate = self
+        self.emptyDataSetSource = self
+    }
+    
+    
+    /// 仅仅设置空白页图片
+    ///
+    /// - image: image
+    func addEmpty(image:String){
+        self.emptyImage = image
+        self.emptyDataSetDelegate = self
+        self.emptyDataSetSource = self
+    }
+    
+    
+    /// 仅仅设置空白页文本
+    ///
+    /// - Parameter text: text
+    func addEmpty(text:String){
+        self.emptyText = text
+        self.emptyDataSetDelegate = self
+        self.emptyDataSetSource = self
+    }
+    
+    ///点击空白页回调
+    func obtainClickClosure(Closure:@escaping clickTipClosure) {
+        // 创建blockContainer,将外界传来的闭包赋值给类属性中的闭包变量
+        let blockContainer: BlockContainer = BlockContainer()
+        blockContainer.clickTipClosure = Closure
+        self.newDataBlock = blockContainer
+    }
+    
+    
+}
+
+
+
 struct RuntimeKey {
     ///空数据显示内容
     static let emptyText = UnsafeRawPointer.init(bitPattern: "emptyText".hashValue)
@@ -23,7 +109,7 @@ struct RuntimeKey {
 //MARK: -- 给UIScrollView添加属性 --
 extension UIScrollView {
     ///空数据显示内容
-    var emptyText: String? {
+   private var emptyText: String? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.emptyText!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -33,7 +119,7 @@ extension UIScrollView {
         }
     }
     ///空数据的图片
-    var emptyImage: String? {
+   private var emptyImage: String? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.emptyImage!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -44,7 +130,7 @@ extension UIScrollView {
     }
     
     ///垂直偏移量
-    var offset: CGFloat? {
+   private var offset: CGFloat? {
         set {
             objc_setAssociatedObject(self, RuntimeKey.offset!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -76,70 +162,6 @@ extension UIScrollView {
     }
   
   
-}
-
-//MARK: -- 给UIScrollView添加方法 --
-extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
-    
-    /// 设置空白页text。image。偏移量
-    ///
-    /// - Parameters:
-    ///   - text: text
-    ///   - image: image
-    ///   - offSet: 偏移量
-    func SetUPEmptyTextWithEmptyImageWithOffSet(text:String,image:String,offSet:CGFloat) {
-        self.emptyText = text
-        self.emptyImage = image
-        self.offset = offSet
-        
-        self.emptyDataSetDelegate = self
-        self.emptyDataSetSource = self
-    }
-    
-    /// 设置空白页text。image
-    ///
-    /// - Parameters:
-    ///   - text: text
-    ///   - image: image
-    ///
-    func SetUPEmptyTextWithEmptyImage(text:String,image:String){
-        self.emptyText = text
-        self.emptyImage = image
-        
-        
-        self.emptyDataSetDelegate = self
-        self.emptyDataSetSource = self
-    }
-    
-    
-    /// 仅仅设置空白页图片
-    ///
-    /// - image: image
-    func SetUPEmptyText(image:String){
-         self.emptyImage = image
-         self.emptyDataSetDelegate = self
-         self.emptyDataSetSource = self
-    }
-    
-    
-    /// 仅仅设置空白页文本
-    ///
-    /// - Parameter text: text
-    func SetUPEmptyText(text:String){
-        self.emptyText = text
-        self.emptyDataSetDelegate = self
-        self.emptyDataSetSource = self
-    }
-    
-    ///点击空白页回调
-    func obtainClickClosure(Closure:@escaping clickTipClosure) {
-        // 创建blockContainer,将外界传来的闭包赋值给类属性中的闭包变量
-        let blockContainer: BlockContainer = BlockContainer()
-        blockContainer.clickTipClosure = Closure
-        self.newDataBlock = blockContainer
-    }
-    
-    
 }
 
 

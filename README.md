@@ -236,17 +236,20 @@
 
 |名称|说明|
 |---|:---:|
-|emptyText|空数据显示内容|
-|emptyImage|空数据的图片|
-|垂直偏移量|offset|
+|func addEmpty(text:String? = nil,image:String? = nil,offSet:CGFloat? = 0)|可选文本，image，offset|
+|func addEmpty(text:String,image:String,offSet:CGFloat)|文本，image，offset|
+|func addEmpty(text:String,image:String)|文本，image|
+|func addEmpty(image:String)|image|
+|func addEmpty(text:String)|文本|
 |obtainClickClosure|点击闭包回调|
     
 这个封装使用起来也是非常的简单
 ```
 //空白数据的时候
-self.tableView.emptyText = "空白数据"
+self.tableView.addEmpty(text: "空白数据", image: "Head", offSet: 0)
 self.tableView.obtainClickClosure {
 //点击空白的回调
+print("点击空白的回调")
 }
 ```
     
