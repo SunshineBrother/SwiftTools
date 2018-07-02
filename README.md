@@ -207,6 +207,7 @@
  ## UIFoundation
  ### MBProgressHUD封装
  这里就有三个简单的方法
+
  |名称|说明|
  |---|:---:|
  |class func ShowMessage(text:String,touch:Bool? = false,afterDelay:TimeInterval? = 1.0) {}|提示文本|
