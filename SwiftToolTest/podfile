@@ -7,5 +7,5 @@ pod 'MBProgressHUD'
 pod 'DZNEmptyDataSet'
 pod 'IQKeyboardManager'
 pod 'YYCache'
-pod 'Moya'
+pod 'Alamofire'
 end

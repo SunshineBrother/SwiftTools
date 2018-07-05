@@ -46,6 +46,7 @@
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
+		28DC556920EC7AFB00C1FF97 /* JHCacheUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC556820EC7AFB00C1FF97 /* JHCacheUntil.swift */; };
 		28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
@@ -125,6 +126,7 @@
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		28DC556820EC7AFB00C1FF97 /* JHCacheUntil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCacheUntil.swift; sourceTree = "<group>"; };
 		28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProgressHUD.swift; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				282A289D20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift */,
 				282A289C20E9C6670053BEC3 /* ScrollView+JHRefresh.swift */,
 				28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */,
+				28DC556820EC7AFB00C1FF97 /* JHCacheUntil.swift */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -496,8 +499,6 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
@@ -509,8 +510,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
@@ -576,6 +575,7 @@
 				28FBB04E20B4195E00278692 /* LabelController.swift in Sources */,
 				2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */,
 				282316AD20E63C4F004B4DEC /* MBProgressHUDController.swift in Sources */,
+				28DC556920EC7AFB00C1FF97 /* JHCacheUntil.swift in Sources */,
 				28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */,
 				2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */,
 				286786B520B43EC600209F55 /* JHLabel.swift in Sources */,
@@ -759,10 +759,7 @@
 				DEVELOPMENT_TEAM = Z69Q2FEZS9;
 				INFOPLIST_FILE = SwiftToolTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftToolTest/SwiftToolTest-Bridging-Header.h";
@@ -782,10 +779,7 @@
 				DEVELOPMENT_TEAM = Z69Q2FEZS9;
 				INFOPLIST_FILE = SwiftToolTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftToolTest/SwiftToolTest-Bridging-Header.h";
@@ -801,11 +795,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftToolTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -821,11 +811,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftToolTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -840,11 +826,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftToolTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -859,11 +841,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftToolTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yunna.SwiftToolTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
