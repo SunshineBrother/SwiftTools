@@ -26,11 +26,10 @@ class JHProgressHUD: NSObject {
             hud.mode = MBProgressHUDMode.text
             hud.label.text = text
             hud.backgroundView.style = MBProgressHUDBackgroundStyle.solidColor
-            hud.backgroundView.color = UIColor.white
-            hud.backgroundView.alpha = 0.1
+            hud.backgroundView.color = UIColor.black
+            hud.backgroundView.alpha = 0.2
             hud.hide(animated: true, afterDelay: afterDelay!)
             hud.removeFromSuperViewOnHide = true
-            
         }
     }
     
@@ -45,6 +44,9 @@ class JHProgressHUD: NSObject {
         DispatchQueue.main.async {
             let window:UIWindow = UIApplication.shared.keyWindow!
             let hud = MBProgressHUD.showAdded(to: window, animated: true)
+            hud.backgroundView.style = MBProgressHUDBackgroundStyle.solidColor
+            hud.backgroundView.color = UIColor.black
+            hud.backgroundView.alpha = 0.2
             if text != nil {
                 hud.label.text = text
             }
@@ -64,7 +66,7 @@ class JHProgressHUD: NSObject {
         }
         
     }
- 
+    
 }
 
 extension UIWindow{
@@ -75,6 +77,7 @@ extension UIWindow{
         }
         return super.hitTest(point, with: event)
     }
+   
 }
 
 

@@ -20,8 +20,9 @@ class MBProgressHUDController: UIViewController {
     @IBAction func Test1(_ sender: Any) {
         
         JHProgressHUD.ShowMessage(text: "我是测试HUD", touch: true, afterDelay: 5)
-        
-        
+        JHProgressHUD.ShowMessage(text: "我是测试HUD", touch: true, afterDelay: 5)
+        JHProgressHUD.ShowMessage(text: "我是测试HUD", touch: true, afterDelay: 5)
+        JHProgressHUD.ShowMessage(text: "我是测试HUD", touch: true, afterDelay: 5)
     }
     
     
