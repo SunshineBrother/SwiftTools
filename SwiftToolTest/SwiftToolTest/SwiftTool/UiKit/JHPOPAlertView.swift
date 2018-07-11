@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 //系统弹框
 enum SystemPOPType {
     case alert
@@ -41,10 +40,7 @@ class JHPOPAlertView: NSObject {
         UIApplication.shared.delegate?.window??.rootViewController?.present(alert, animated: true, completion: nil)
     }
 
-    
-   
-    
- 
+  
 }
 
 

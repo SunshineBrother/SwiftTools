@@ -6,6 +6,12 @@
 	<array>
 		<dict>
 			<key>Title</key>
+			<string>系统弹窗</string>
+			<key>Class</key>
+			<string>AlertControlller</string>
+		</dict>
+		<dict>
+			<key>Title</key>
 			<string>UIView扩展</string>
 			<key>Class</key>
 			<string>ViewController</string>
@@ -111,21 +117,6 @@
 			<string>转场动画</string>
 			<key>Class</key>
 			<string>transitionsAnimated</string>
-		</dict>
-	</array>
-	<key>Popup</key>
-	<array>
-		<dict>
-			<key>Title</key>
-			<string>系统弹窗</string>
-			<key>Class</key>
-			<string>SystemPopUp</string>
-		</dict>
-		<dict>
-			<key>Title</key>
-			<string>弹出白色视图</string>
-			<key>Class</key>
-			<string>popWhiteView</string>
 		</dict>
 	</array>
 	<key>hardware</key>

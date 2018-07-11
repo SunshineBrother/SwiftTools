@@ -94,7 +94,17 @@
  |func setImageFrontTextWithLeftAlignment(imageWidth:CGFloat, space:CGFloat,buttonWidth : CGFloat)  {}|整体在最左侧   image在左 title在右|
  |func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat)  {}|上下结构 image在上 label在下|
  
+ ### UIAlertController扩展
+ |名称|说明|
+ |---|:---:|
+ |showSystemPOPView(title:String? = "提示",message:String,titleArr:[String],type:SystemPOPType,complete:@escaping ((NSInteger)->(Void))) {}|弹出系统提示框|
  
+ 这里仅仅对系统弹框做了一个简单的封装，如果想要其他的弹框，网上有很多的
+ ```
+ JHPOPAlertView.showSystemPOPView(message: "我是测试", titleArr: ["取消","确定"], type: .alert) { (index) -> (Void) in
+ 
+ }
+ ```
  
 
  

@@ -39,6 +39,8 @@
 		285BA82A209462D700735E74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA829209462D700735E74 /* Model.swift */; };
 		285E83FB20F4486C0049BD6D /* JHPOPAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E83FA20F4486C0049BD6D /* JHPOPAlertView.swift */; };
 		286786B520B43EC600209F55 /* JHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286786B420B43EC600209F55 /* JHLabel.swift */; };
+		287330F520F5F07A00C3075A /* AlertControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287330F320F5F07A00C3075A /* AlertControlller.swift */; };
+		287330F620F5F07A00C3075A /* AlertControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287330F420F5F07A00C3075A /* AlertControlller.xib */; };
 		2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2820ABC40A00A60E53 /* DictionaryController.swift */; };
 		2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */; };
 		2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3420ABD90400A60E53 /* ValueChange.swift */; };
@@ -119,6 +121,8 @@
 		285BA829209462D700735E74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		285E83FA20F4486C0049BD6D /* JHPOPAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHPOPAlertView.swift; sourceTree = "<group>"; };
 		286786B420B43EC600209F55 /* JHLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHLabel.swift; sourceTree = "<group>"; };
+		287330F320F5F07A00C3075A /* AlertControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControlller.swift; sourceTree = "<group>"; };
+		287330F420F5F07A00C3075A /* AlertControlller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertControlller.xib; sourceTree = "<group>"; };
 		2880CE2820ABC40A00A60E53 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JHExtension.swift"; sourceTree = "<group>"; };
 		2880CE3420ABD90400A60E53 /* ValueChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChange.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				280DD3AD20B7B67900F2276A /* ButtonController.xib */,
 				2810F96D20BE8E9200ACCE11 /* ImageController.swift */,
 				2810F96E20BE8E9200ACCE11 /* ImageController.xib */,
+				287330F320F5F07A00C3075A /* AlertControlller.swift */,
+				287330F420F5F07A00C3075A /* AlertControlller.xib */,
 			);
 			path = Uikit;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				280DD3AF20B7B67900F2276A /* ButtonController.xib in Resources */,
 				2810F97020BE8E9200ACCE11 /* ImageController.xib in Resources */,
 				285BA7FD2094457D00735E74 /* Assets.xcassets in Resources */,
+				287330F620F5F07A00C3075A /* AlertControlller.xib in Resources */,
 				285BA7FB2094457C00735E74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +568,7 @@
 				28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */,
 				28FBB04520B4061A00278692 /* regularController.swift in Sources */,
 				282A289F20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift in Sources */,
+				287330F520F5F07A00C3075A /* AlertControlller.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
