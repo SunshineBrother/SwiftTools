@@ -105,7 +105,11 @@
  
  }
  ```
- 
+ ### UITapGestureRecognizer扩展
+ |名称|说明|
+ |---|:---:|
+ |timeInterval|两次点击相差的时间|
+ |init(target: Any?, action: Selector?,timeInterval:CGFloat) {}|初始化|
 
  
 ## UIFoundation
@@ -263,7 +267,19 @@ print("点击空白的回调")
 }
 ```
     
-  
+## 杂类
+   
+###  LocationTool
+|名称|说明|
+|---|:---:|
+|func getUserCoordinate(_ coordinateCallBack: @escaping (_ coordinate : CLLocationCoordinate2D?) -> (), _ addressCallBack:@escaping (_ Placemark : CLPlacemark?) -> ()) {}||
+```
+LocationTool.sharedInstance.getUserCoordinate({ (coor) in
+print(coor)
+}) { (place) in
+print(place)
+}
+```
  
  ## 硬件
  关于硬件方面我分了一下几个方面

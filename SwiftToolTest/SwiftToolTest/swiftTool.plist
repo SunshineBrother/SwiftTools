@@ -46,6 +46,12 @@
 			<key>Class</key>
 			<string>TextViewController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>UIViewController扩展</string>
+			<key>Class</key>
+			<string>Controller</string>
+		</dict>
 	</array>
 	<key>Foundation</key>
 	<array>
@@ -146,7 +152,13 @@
 			<key>Title</key>
 			<string>经纬度的转换</string>
 			<key>Class</key>
-			<string>location</string>
+			<string>LocationController</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>微信下拉框</string>
+			<key>Class</key>
+			<string>PopMenuController</string>
 		</dict>
 	</array>
 	<key>ThirdParty</key>

@@ -42,27 +42,34 @@ extension UIView {
 extension UIView {
     /// 宽
     public var W: CGFloat {
-        return CGFloat(self.bounds.size.width)
+        return self.bounds.size.width
     }
     /// 高
     public var H: CGFloat {
-        return CGFloat(self.bounds.size.height)
+        return self.bounds.size.height
     }
     /// X
     public var X: CGFloat {
-        return CGFloat(self.frame.origin.x)
+        return self.frame.origin.x
     }
     /// Y
     public var Y: CGFloat {
-        return CGFloat(self.frame.origin.y)
+        return self.frame.origin.y
+    }
+    /// bottom
+    public var bottom:CGFloat{
+        return Y+H
+    }
+    public var right:CGFloat{
+        return X + W
     }
     /// centerX
     public var centerX: CGFloat {
-        return CGFloat(self.center.x)
+        return self.center.x
     }
     /// centerY
     public var centerY: CGFloat {
-        return CGFloat(self.center.y)
+        return self.center.y
     }
     
     
