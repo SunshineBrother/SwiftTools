@@ -270,6 +270,9 @@ print("点击空白的回调")
 ## 杂类
    
 ###  LocationTool
+
+一行代码获取用户的经纬度以及地理信息，再也不用写上百行代码来实现这个简单的功能了
+
 |名称|说明|
 |---|:---:|
 |func getUserCoordinate(_ coordinateCallBack: @escaping (_ coordinate : CLLocationCoordinate2D?) -> (), _ addressCallBack:@escaping (_ Placemark : CLPlacemark?) -> ()) {}||
