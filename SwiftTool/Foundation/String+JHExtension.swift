@@ -58,7 +58,7 @@ extension String{
     mutating func stringByReplacingstringByReplacingString(text:String,replacText:String) -> String {
         return self.replacingOccurrences(of: text, with: replacText)
     }
-  
+    
     ///删除最后一个字符
     mutating func deleteEndCharacters() -> String {
         self.remove(at: self.index(before: self.endIndex))
@@ -69,6 +69,18 @@ extension String{
         return self.replacingOccurrences(of: string, with: "")
     }
     
+    /// 字符的插入
+    mutating func insertString(text:Character,index:Int) -> String{
+        let start = self.index(self.startIndex, offsetBy: index)
+        self.insert(text, at: start)
+        return self
+    }
+    ///字符串的插入
+    mutating func insertString(text:String,index:Int) -> String{
+        let start = self.index(self.startIndex, offsetBy: index)
+        self.insert(contentsOf: text, at: start)
+        return self
+    }
     
     /// 将字符串通过特定的字符串拆分为字符串数组
     ///
@@ -77,20 +89,7 @@ extension String{
     func split(string:String) -> [String] {
         return NSString(string: self).components(separatedBy: string)
     }
-    ///从字符串中提取数字
-    public func getIntFromString() -> NSInteger {
-        let list = NSMutableArray()
-        for c in self {
-            if (c >= "0") && (c <= "9"){
-                list.add(String(c))
-            }
-        }
-        let k = list.componentsJoined(by: "")
-        let w = NSInteger(k) ?? 0
-        
-        return w
-    }
- 
+    
 }
 
 //MARK: -- 类型判断 --
@@ -140,11 +139,12 @@ extension String{
     var isAlphanumeric: Bool {
         return !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
     }
-  
+    
 }
 
 //MARK: -- 将字符串替换成值类型 --
 extension String{
+    
     ///变成Int 类型
     public func toInt() -> Int? {
         if let num = NumberFormatter().number(from: self) {
@@ -210,7 +210,7 @@ extension String{
     
 }
 
- 
+
 
 
 

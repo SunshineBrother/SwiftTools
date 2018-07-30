@@ -37,7 +37,10 @@ class StringController: UIViewController {
         let TEXT5 = "abc"
         print("TEXT4:\(TEXT4.toInt())==\(TEXT5.toInt())")
     
-   
+        //字符串的插入
+        var TEXT6 = "20180720"
+        print(TEXT6.insertString(text: "-", index: 4))
+        print(TEXT6.insertString(text: "heheda", index: 4))
         
         
         

@@ -144,7 +144,8 @@
  |toFloat() -> Float?|变成Float 类型|
  |obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat|获取文本高度|
  |obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat|获取文本宽度|
- 
+ |func insertString(text:Character,index:Int) -> String{}|字符的插入|
+ | func insertString(text:String,index:Int) -> String{}|字符串的插入|
 ### Array扩展
 |名称|说明|
 |---|:---:|

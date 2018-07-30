@@ -69,6 +69,18 @@ extension String{
         return self.replacingOccurrences(of: string, with: "")
     }
     
+    /// 字符的插入
+    mutating func insertString(text:Character,index:Int) -> String{
+        let start = self.index(self.startIndex, offsetBy: index)
+        self.insert(text, at: start)
+        return self
+    }
+    ///字符串的插入
+    mutating func insertString(text:String,index:Int) -> String{
+        let start = self.index(self.startIndex, offsetBy: index)
+        self.insert(contentsOf: text, at: start)
+        return self
+    }
     
     /// 将字符串通过特定的字符串拆分为字符串数组
     ///
