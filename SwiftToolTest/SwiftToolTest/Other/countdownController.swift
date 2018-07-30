@@ -20,7 +20,6 @@ class countdownController: UIViewController {
             print("*************")
             
         }
-        
         self.view.addSubview(btn)
         
         

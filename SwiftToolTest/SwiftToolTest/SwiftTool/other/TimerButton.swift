@@ -63,12 +63,6 @@ extension TimerButton{
     
     //点击事件
     @objc func clickBtnEvent(){
-        self.isUserInteractionEnabled = false
-        ///防止连续点击
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.isUserInteractionEnabled = true
-        }
-        print("点击事件")
         if self.clickBtnClose != nil {
             self.clickBtnClose!()
         }
@@ -78,7 +72,7 @@ extension TimerButton{
     ///定时器事件
     @objc func updateTime(_ timer: Timer) {
         self.countTime -= 1
-        print("dingshiqi")
+        
         if countTime > 0 {
             self.isUserInteractionEnabled = false
             self.setTitle(prefix + "\(countTime)s", for: .normal)

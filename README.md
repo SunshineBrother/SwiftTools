@@ -284,6 +284,19 @@ print(coor)
 print(place)
 }
 ```
+###  倒计时
+这里直接继承自button，写法完全是跟button一样
+```
+let btn = TimerButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+btn.backgroundColor = UIColor.gray
+btn.setUP(start: "点击获取验证码", prefix: "倒计时", countTime: 10) {
+btn.isWorking = true
+print("*************")
+
+} 
+self.view.addSubview(btn)
+```
+
  
  ## 硬件
  关于硬件方面我分了一下几个方面
