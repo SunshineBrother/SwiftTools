@@ -17,7 +17,7 @@ extension Date{
         let dataString = dateFormatter.string(from: self)
         return dataString
     }
-    
+     
     /// 获取当前时间 date
     public var CurrentDateTime:Date{
         let date = Date.init(timeInterval: 60*60*8, since: self)
@@ -52,10 +52,10 @@ extension Date{
     ///date 转字符串
     func dateString(from date:Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let dateS = formatter.string(from: date)
         return dateS
-        
+
     }
     
     /// 时间戳转化为date
@@ -67,33 +67,33 @@ extension Date{
     }
     /// 时间戳转化为字符串
     func dateString(from StampTime:u_long) -> String {
-        
+
         let timeInterval:TimeInterval = TimeInterval(StampTime)
         let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
         let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let dateS = formatter.string(from: date as Date)
-        
+       
         return dateS
     }
     /// 字符串转date
     func date(from dateString:String) -> Date {
         let dateFormatter = DateFormatter.init()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let date = dateFormatter.date(from: dateString)
-        
+ 
         return date!
     }
     /// 字符串转时间戳
     func StampTime(from dateString:String) ->  u_long{
         let dateFormatter = DateFormatter.init()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let date = dateFormatter.date(from: dateString)
         let stamp = date!.timeIntervalSince1970 - 8*60*60
         
         return u_long(stamp)
     }
-    
+ 
     
 }
 //MARK: -- 其他 --
@@ -147,7 +147,7 @@ extension Date{
         let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Date())
         return format.string(from: self) == format.string(from: tomorrow!)
     }
-    
+  
 }
 
 
