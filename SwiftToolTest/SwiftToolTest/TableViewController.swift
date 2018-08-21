@@ -87,9 +87,6 @@ class TableViewController: UITableViewController {
         self.navigationController?.pushViewController(vcClass, animated: true)
  
     }
-  
-
-    
 
 }
 
