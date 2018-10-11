@@ -168,9 +168,9 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>系统网络权限</string>
+			<string>条目</string>
 			<key>Class</key>
-			<string>countdownController</string>
+			<string>entryController</string>
 		</dict>
 	</array>
 	<key>ThirdParty</key>

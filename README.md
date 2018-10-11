@@ -5,8 +5,9 @@
 ![UITextView](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UITextView.gif)
 ![UILabel扩展](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UILabel扩展.gif)
 ![UIButton扩展](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/UIButton扩展.png)
+![entry](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/entry.png)
 ![倒计时](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/倒计时.gif)
-
+![下拉列表](https://github.com/SunshineBrother/SwiftTools/blob/master/GIF/下拉列表.gif)
 
 # SwiftTools
 技术不够，努力来凑；封装不了一个伟大的开源框架，但是仍然想要有一个自己的开源项目，所以就准备把一些项目中的常用工具类给封装出来，省的每一次写项目的时候都要重写一遍。
@@ -296,6 +297,38 @@ print("*************")
 } 
 self.view.addSubview(btn)
 ```
+###  小条目
+我们在写一些小条目的时候有的时候会感觉很厌烦，然后我就简单的总结了几个类型
+|名称|说明|
+|---|:---:|
+|hitEntryViewClose|添加点击事件回调|
+|SetUpTitle(mainTitle:,subtitle:)|主标题&副标题|
+|SetUpTitle(mainTitle:,subtitle:,arrow:,size:)|主标题&副标题&箭头|
+|SetUpTitle(mainTitle:,arrow:,size:)|主标题*&箭头|
+|SetUPSwitch(mainTitle:,switchOn:,SwitchClose:）|主标题&开关按钮|
+|SetUPTextField(mainTitle:,placeHolder:)|主标题&UITextfield|
+|SetUPTextField(mainTitle:,placeHolder:,arrow:,size:)|主标题&UITextfield&箭头|
+|SetUPSubtitleIV(mainTitle:,SubtitleIcon:,SubtitleSize:,arrow:,size)|主标题，右侧图片，箭头|
+|SetUPMainIV(mainIcon:,mainSize:,mainTitle:,spacing:,arrow:,size:)|左侧图片，标题|
+
+### 下拉列表
+```
+//设置属性
+popMenuList.append((icon: "", title: "测试1"))
+popMenuList.append((icon: "", title: "测试2"))
+popMenuList.append((icon: "", title: "测试3"))
+popMenuList.append((icon: "", title: "测试4"))
+
+self.popMenu = SwiftPopMenu(frame: CGRect(x: 130, y: 210, width: 80, height: 200))
+self.popMenu.popData = popMenuList
+//点击菜单
+self.popMenu.didSelectMenuBlock = { [weak self](index:Int)->Void in
+self?.popMenu.dismiss()
+
+}
+self.popMenu.show()
+```
+
 
  
  ## 硬件

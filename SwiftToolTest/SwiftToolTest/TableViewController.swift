@@ -82,7 +82,7 @@ class TableViewController: UITableViewController {
         }
         // 通过得到的class类型创建对象
         let vcClass = cls.init()
-        vcClass.view.backgroundColor = UIColor.white
+        vcClass.view.backgroundColor = RGB(r: 240, g: 240, b: 240)
         vcClass.title = model.title
         self.navigationController?.pushViewController(vcClass, animated: true)
  
