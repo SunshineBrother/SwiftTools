@@ -17,10 +17,7 @@ class LabelController: UIViewController {
     @IBOutlet weak var Label: JHLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        
-        
-        
+      
         
  
         Label.WordSpace = 10
@@ -33,7 +30,7 @@ class LabelController: UIViewController {
     
     @IBAction func ButtonEvent(_ sender: Any) {
         Label.topText = true
-        Label.text = "我要左上啦"
+        Label.text = "我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦"
     }
     
 }

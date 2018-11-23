@@ -56,10 +56,7 @@ class JHLabel: UILabel {
             super.drawText(in: rect)
         }
     }
-    
-    
-    
-  
+
     
 }
 
