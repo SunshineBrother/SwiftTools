@@ -551,7 +551,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
@@ -574,7 +574,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftToolTest/Pods-SwiftToolTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98BBB8A8306F1E421B8FBAD8 /* [CP] Check Pods Manifest.lock */ = {
