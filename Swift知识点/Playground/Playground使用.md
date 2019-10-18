@@ -51,7 +51,7 @@ let iv = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
 iv.image = UIImage(named: "logo")
 PlaygroundPage.current.liveView = iv
 ```
-
+![logo](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/Playground/logo.png)
 
 **引入其他文件**
 
