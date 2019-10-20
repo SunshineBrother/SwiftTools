@@ -8,7 +8,9 @@
 
 - [3、流程控制](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/流程控制/流程控制.md)
 
+- [4、函数](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/函数/函数.md)
 
+- [5、枚举](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/枚举/枚举.md)
 
 
 
