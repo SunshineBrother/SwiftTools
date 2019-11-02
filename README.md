@@ -11,6 +11,7 @@
 
 - [4、枚举](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/枚举/枚举.md)
 
+- [5、结构体和类](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/结构体和类/结构体和类.md)
 
 
 
