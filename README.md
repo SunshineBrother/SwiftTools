@@ -13,6 +13,7 @@
 
 - [5、结构体和类](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/结构体和类/结构体和类.md)
 
+- [6、闭包](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/闭包/闭包.md)
 
 
 
