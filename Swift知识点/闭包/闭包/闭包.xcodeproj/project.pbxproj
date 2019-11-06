@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		28208C16236D840D00816BCE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28208C15236D840D00816BCE /* main.swift */; };
+		28EF5AE62370151B00DAA257 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5AE52370151B00DAA257 /* Mems.swift */; };
+		28EF5AE82370173400DAA257 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5AE72370173400DAA257 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		28208C12236D840D00816BCE /* 闭包 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "闭包"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28208C15236D840D00816BCE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		28EF5AE52370151B00DAA257 /* Mems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mems.swift; path = "../../../枚举/Mems.swift"; sourceTree = "<group>"; };
+		28EF5AE72370173400DAA257 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				28208C15236D840D00816BCE /* main.swift */,
+				28EF5AE72370173400DAA257 /* Person.swift */,
+				28EF5AE52370151B00DAA257 /* Mems.swift */,
 			);
 			path = "闭包";
 			sourceTree = "<group>";
@@ -120,7 +126,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EF5AE82370173400DAA257 /* Person.swift in Sources */,
 				28208C16236D840D00816BCE /* main.swift in Sources */,
+				28EF5AE62370151B00DAA257 /* Mems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
