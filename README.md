@@ -15,7 +15,7 @@
 
 - [6、闭包](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/闭包/闭包.md)
 
-
+- [7、属性](https://github.com/SunshineBrother/SwiftTools/blob/master/Swift知识点/属性/属性.md)
 
 
 
