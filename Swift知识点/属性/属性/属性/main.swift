@@ -77,44 +77,55 @@ import Foundation
 //}
 
 
-struct Shape {
-    var width:Int
-    var side:Int {
-        willSet{
-            print("willSet",newValue)
-        }
-        didSet{
-            print("didSet",oldValue)
-        }
-    }
-    
-    var grith:Int{
-        set{
-            width = newValue / side
-            print("setGrith",newValue)
-        }
-        get{
-            print("getGrith")
-            return width * side
-        }
-    }
-    
-    func show() {
-        print("width:\(width)--side:\(side)--grith:\(grith)")
-    }
-    
-}
+//struct Shape {
+//    var width:Int
+//    var side:Int {
+//        willSet{
+//            print("willSet",newValue)
+//        }
+//        didSet{
+//            print("didSet",oldValue)
+//        }
+//    }
+//
+//    var grith:Int{
+//        set{
+//            width = newValue / side
+//            print("setGrith",newValue)
+//        }
+//        get{
+//            print("getGrith")
+//            return width * side
+//        }
+//    }
+//
+//    func show() {
+//        print("width:\(width)--side:\(side)--grith:\(grith)")
+//    }
+//
+//}
+//
+//
+//func test (_ num: inout Int){
+//    print("test1")
+//    num = 20
+//}
+//
+//var s = Shape(width: 10, side: 4)
+//test(&s.side)
+////s.show()
+//print("-------")
 
+struct Test {
+     static var num = 11
+}
+var num1 = Test.num
  
-func test (_ num: inout Int){
-    print("test1")
-    num = 20
-}
 
-var s = Shape(width: 10, side: 4)
-test(&s.side)
-//s.show()
-print("-------")
+
+
+
+
 
 
 
