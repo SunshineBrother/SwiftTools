@@ -1536,13 +1536,7 @@ default:
 
  
 
-## 总结
-
-- 1、文章中代码的[demo地址](https://github.com/SunshineBrother/100-tips-demo)
-- 2、文章是读王巍 (onevcat). “Swifter - Swift 必备 Tips (第四版)总结所得
-
-
-
+ 
 
 
 
