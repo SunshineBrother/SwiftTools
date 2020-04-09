@@ -15,16 +15,8 @@ extension Array where Element : Equatable {
     public func removedDuplicates() -> [Element] {
         return reduce([]) { $0.contains($1) ? $0 : $0 + [$1] }
     }
-
-    public func contains(_ elements: [Element]) -> Bool {
-        for item in elements {
-            if contains(item) == false {
-                return false
-            }
-        }
-        return true
-    }
  
+    
 }
 
 

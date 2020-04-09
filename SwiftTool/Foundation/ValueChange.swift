@@ -77,12 +77,7 @@ class ValueChange: NSObject {
         let array = json as! Array<Any>
         return array
     }
-    
-    
-    
  
-    
-    
 }
 
 
