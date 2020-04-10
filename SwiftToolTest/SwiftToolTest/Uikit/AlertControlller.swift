@@ -18,18 +18,13 @@ class AlertControlller: UIViewController {
 
     
     @IBAction func button1(_ sender: Any) {
-        JHPOPAlertView.showSystemPOPView(message: "我是测试", titleArr: ["取消","确定"], type: .alert) { (index) -> (Void) in
-            
-        }
     }
     
     
     
     
     @IBAction func button2(_ sender: Any) {
-        JHPOPAlertView.showSystemPOPView(message: "我是测试", titleArr: ["微信","扣扣","微博"], type: .actionSheet) { (index) -> (Void) in
-            
-        }
+         
     }
     
 }

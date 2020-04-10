@@ -13,6 +13,8 @@ class StringController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+         
+        
         //URL编码
         let URL = "https://www.baidu.com"
         print(URL.urlEncoded)

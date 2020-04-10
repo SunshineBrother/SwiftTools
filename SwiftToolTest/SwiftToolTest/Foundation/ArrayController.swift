@@ -15,7 +15,7 @@ class ArrayController: UIViewController {
  
         let list = ["1","1","2","2"]
         print(list.removedDuplicates())
-    
+        print(list.get(at: 0...3))
     
     }
 

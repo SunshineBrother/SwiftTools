@@ -7,94 +7,76 @@
 //
 
 import UIKit
+enum MyDateFormatter:String{
+    case dateModeY = "yyy"
+    case dateModeYM = "yyy-MM"
+    case dateModeYMD = "yyy-MM-dd"
+    case dateModeYMDHMS = "yyy-MM-dd HH:mm:ss"
+    case dateModeYMDHMSSS = "yyy-MM-dd HH:mm:ss SSS"
+}
+
+/// 获取当前时间字符串
+/// - Parameter mode: mode
+func getCurrentStingTime(_ mode:MyDateFormatter = .dateModeYMDHMS) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = mode.rawValue
+    let dataString = dateFormatter.string(from: Date())
+    return dataString
+}
+
+/// 获取当前时间戳
+/// - Parameter mode: mode description
+func getCurrentStampTime() ->Int{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyy-MM-dd HH:mm:ss"
+    let dataString = dateFormatter.string(from: Date())
+    let date = dateFormatter.date(from: dataString)
+    let stamp = date!.timeIntervalSince1970
+    
+    return Int(stamp)
+}
+
+
+/// 时间戳转字符串
+/// - Parameter stamp: stamp description
+func toStringTime(stamp:Int) -> String {
+    let timeInterval:TimeInterval = TimeInterval(stamp)
+    let date = Date(timeIntervalSince1970: timeInterval)
+    let dateformatter = DateFormatter()
+    dateformatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    let dateString = dateformatter.string(from: date)
+    
+    return dateString
+}
+
+
+/// 字符串转时间戳
+/// - Parameter strTime: strTime description
+func toStampTime(strTime:String) -> Int {
+    let dateFormatter = DateFormatter.init()
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    let current = dateFormatter.date(from: strTime)
+    let date = Date.init(timeInterval: 0, since: current ?? Date())
+    let stamp = date.timeIntervalSince1970
+    return Int(stamp)
+}
+
+
+
 
 //MARK:-- 常用方法 --
 extension Date{
-    ///获取当前时间字符串
-    public var CurrentStingTime:String{
-        let dateFormatter = DateFormatter.init()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
-        let dataString = dateFormatter.string(from: self)
-        return dataString
-    }
-     
-    /// 获取当前时间 date
-    public var CurrentDateTime:Date{
-        let date = Date.init(timeInterval: 60*60*8, since: self)
-        return date
-    }
-    
-    ///获取当前时间戳
-    public var CurrentStampTime:u_long{
-        let date = Date.init(timeInterval: 0, since: self)
-        let stamp = date.timeIntervalSince1970
-        return u_long(stamp)
-    }
+ 
     ///获取当天0点时间戳
-    public var todayZeroStampTime:u_long{
+    public var todayZeroStampTime:Int{
         let currentDate = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
         let dateString = dateFormatter.string(from: currentDate)
         let zeroStr = dateString + " 00:00:00"
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
-        
-        let date = dateFormatter.date(from: zeroStr)
-        
-        return (date?.StampTime(from: date!))!
-    }
-    
-    
-    /// date 转化为时间戳
-    func StampTime(from date:Date) ->  u_long{
-        return u_long(date.timeIntervalSince1970)
-    }
-    ///date 转字符串
-    func dateString(from date:Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let dateS = formatter.string(from: date)
-        return dateS
-
-    }
-    
-    /// 时间戳转化为date
-    func date(from StampTime:u_long) -> Date {
-        //转换为时间
-        let timeInterval:TimeInterval = TimeInterval(StampTime)
-        let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
-        return date as Date
-    }
-    /// 时间戳转化为字符串
-    func dateString(from StampTime:u_long) -> String {
-
-        let timeInterval:TimeInterval = TimeInterval(StampTime)
-        let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let dateS = formatter.string(from: date as Date)
-       
-        return dateS
-    }
-    /// 字符串转date
-    func date(from dateString:String) -> Date {
-        let dateFormatter = DateFormatter.init()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = dateFormatter.date(from: dateString)
- 
-        return date!
-    }
-    /// 字符串转时间戳
-    func StampTime(from dateString:String) ->  u_long{
-        let dateFormatter = DateFormatter.init()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = dateFormatter.date(from: dateString)
-        let stamp = date!.timeIntervalSince1970 - 8*60*60
-        
-        return u_long(stamp)
+        return toStampTime(strTime: zeroStr)
     }
  
-    
 }
 //MARK: -- 其他 --
 extension Date{

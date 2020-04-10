@@ -57,7 +57,7 @@ extension UIImage{
     }
     
     ///颜色生成image
-    public class func WithColor(color:UIColor) -> UIImage {
+    public class func withColor(color:UIColor) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size);
         let context = UIGraphicsGetCurrentContext()

@@ -23,7 +23,7 @@ class LabelController: UIViewController {
         Label.WordSpace = 10
         Label.text = text
         Label.numberOfLines = 0
-        Label.isCopyable = true
+         
      
     }
 

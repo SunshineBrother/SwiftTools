@@ -11,11 +11,10 @@ import UIKit
 extension String{
     
     ///  字符串的截取
-    public func subStringFrom(index: Int,length:Int) -> String {
+   public func subStringFrom(index: Int,length:Int) -> String {
         if self.count > index {
             let startIndex = self.index(self.startIndex, offsetBy: index)
             let endIndex = self.index(self.startIndex, offsetBy: index+length)
-            
             let subString = self[startIndex..<endIndex]
             return String(subString)
         } else {
@@ -23,8 +22,7 @@ extension String{
         }
     }
     ///  字符串的截取
-    func substring(from: Int, to: Int) -> String
-    {
+    public func substring(from: Int, to: Int) -> String{
         let fromIndex = index(startIndex, offsetBy: from)
         let toIndex = index(startIndex, offsetBy: to)
         
@@ -33,18 +31,15 @@ extension String{
         return String(self[fromIndex ..< toIndex])
     }
     ///  字符串的截取
-    public func substring(from: Int?, to: Int?) -> String
-    {
+    public func substring(from: Int?, to: Int?) -> String{
         return substring(from: from ?? 0, to: to ?? count)
     }
     ///  字符串的截取
-    func substring(from: Int) -> String
-    {
+    public func substring(from: Int) -> String{
         return substring(from: from, to: nil)
     }
     ///  字符串的截取
-    func substring(to: Int) -> String
-    {
+    public func substring(to: Int) -> String{
         return substring(from: nil, to: to)
     }
     
@@ -86,10 +81,26 @@ extension String{
     ///
     /// - Parameter string: 拆分数组使用的字符串
     /// - Returns: 字符串数组
-    func split(string:String) -> [String] {
+    public func split(string:String) -> [String] {
         return NSString(string: self).components(separatedBy: string)
     }
- 
+    
+    /// 去空格
+    public func removeAllSapce() -> String{
+        return self.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+    }
+
+    ///获取某个字符串在总字符串的位置
+    public func positionOf(sub:String, backwards:Bool = false)->Int {
+        var pos = -1
+        if let range = range(of:sub, options: backwards ? .backwards : .literal ) {
+            if !range.isEmpty {
+                pos = self.distance(from:startIndex, to:range.lowerBound)
+            }
+        }
+        return pos
+    }
+    
 }
 
 //MARK: -- 类型判断 --
@@ -98,7 +109,6 @@ extension String{
     public var urlEncoded: String {
         let characterSet = CharacterSet(charactersIn: ":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`")
         return self.addingPercentEncoding(withAllowedCharacters: characterSet)!
-        
     }
     /// URL解码
     public var urlDecode: String? {
@@ -126,6 +136,7 @@ extension String{
     /// 是否是URL
     public var isValidUrl: Bool {
         return URL(string: self) != nil }
+    
     /// 是否是手机号
     public var isMobile: Bool {
         guard !self.isEmpty else{
@@ -139,6 +150,20 @@ extension String{
     var isAlphanumeric: Bool {
         return !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
     }
+     
+    
+    /// 是否包含表情
+    var isIncludesEmoji:Bool{
+        for i in 0...count {
+            let c: unichar = (self as NSString).character(at: i)
+            if (0xD800 <= c && c <= 0xDBFF) || (0xDC00 <= c && c <= 0xDFFF) {
+                return true
+            }
+        }
+        return false
+    }
+    
+   
   
 }
 
@@ -178,7 +203,7 @@ extension String{
     /// - Parameters:
     ///   - font: font
     ///   - fixedWidth: fixedWidth
-    func obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat {
+    func getHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat {
         
         guard self.count > 0 && fixedWidth > 0 else {
             return 0
@@ -195,7 +220,7 @@ extension String{
     /// 获取文本宽度
     ///
     /// - Parameter font: font
-    func obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
+    func getWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
         
         guard self.count > 0 else {
             return 0

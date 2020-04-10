@@ -57,7 +57,7 @@ class ServiceManager: NSObject,CBCentralManagerDelegate {
 //MARK: -- 权限跳转 --
 extension ServiceManager {
     ///开启权限
-    func TurnOnServeManager() {
+    func turnOnServeManager() {
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(URL.init(string: UIApplicationOpenSettingsURLString)!, options: [String:Any](), completionHandler: nil)
         } else {

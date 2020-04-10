@@ -103,6 +103,12 @@
 			<key>Class</key>
 			<string>ColorController</string>
 		</dict>
+		<dict>
+			<key>Title</key>
+			<string>设备信息</string>
+			<key>Class</key>
+			<string>DeviceInfoController</string>
+		</dict>
 	</array>
 	<key>animation</key>
 	<array>

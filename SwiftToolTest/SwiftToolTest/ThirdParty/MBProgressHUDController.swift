@@ -13,13 +13,19 @@ class MBProgressHUDController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        JHProgressHUD.Showloading()
+        JHProgressHUD.Showloading()
+        JHProgressHUD.Showloading()
+        JHProgressHUD.Showloading()
         
+        delay(3) {
+            JHProgressHUD.dismissHUD()
+        }
     }
 
     
     @IBAction func Test1(_ sender: Any) {
         
-       
     }
     
     

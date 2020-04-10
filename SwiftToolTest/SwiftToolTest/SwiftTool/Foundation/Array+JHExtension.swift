@@ -15,13 +15,18 @@ extension Array where Element : Equatable {
         return reduce([]) { $0.contains($1) ? $0 : $0 + [$1] }
     }
 
-    public func contains(_ elements: [Element]) -> Bool {
-        for item in elements {
-            if contains(item) == false {
-                return false
-            }
+    ///移除对象
+    mutating func remove(_ object: Element) {
+        if let index = index(of: object) {
+             remove(at: index)
         }
-        return true
+     }
+     
+    /// 获取指定区间内的字符串
+    /// - Parameter range: 区间
+    public func get(at range: ClosedRange<Int>) -> Array {
+        let halfOpenClampedRange = Range(range).clamped(to: Range(indices))
+        return Array(self[halfOpenClampedRange])
     }
  
 }

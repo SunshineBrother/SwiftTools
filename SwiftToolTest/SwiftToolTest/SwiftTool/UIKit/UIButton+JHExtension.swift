@@ -11,6 +11,10 @@ import UIKit
 //MARK: -- 常见set方法 --
 extension UIButton{
     
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, target: AnyObject, action: Selector) {
+        self.init(frame: CGRect(x: x, y: y, width: w, height: h))
+        addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+    }
     /// 设置选中状态文字颜色
     ///
     /// - Parameters:
@@ -57,14 +61,7 @@ extension UIButton{
 struct RunTimeButtonKey {
     ///连续两次点击相差时间
     static let timeInterval = UnsafeRawPointer.init(bitPattern: "timeInterval".hashValue)
-    
-    ///点击区域
-    static let topNameKey = UnsafeRawPointer.init(bitPattern: "topNameKey".hashValue)
-    static let rightNameKey = UnsafeRawPointer.init(bitPattern: "rightNameKey".hashValue)
-    static let bottomNameKey = UnsafeRawPointer.init(bitPattern: "bottomNameKey".hashValue)
-    static let leftNameKey = UnsafeRawPointer.init(bitPattern: "leftNameKey".hashValue)
- 
-    
+  
 }
 
 extension UIButton {
@@ -99,92 +96,7 @@ extension UIButton {
         }
         mySendAction(action, to: target, for: event)
     }
-    
-    //=== 扩大点击响应事件 ===
-    var topEdge: CGFloat? {
-        set {
-            objc_setAssociatedObject(self, RunTimeButtonKey.topNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            
-        }
-        
-        get {
-            
-            return  objc_getAssociatedObject(self, RunTimeButtonKey.topNameKey!) as? CGFloat
-        }
-    }
-    var leftEdge: CGFloat? {
-        set {
-            objc_setAssociatedObject(self, RunTimeButtonKey.leftNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            
-        }
-        
-        get {
-            
-            return  objc_getAssociatedObject(self, RunTimeButtonKey.leftNameKey!) as? CGFloat
-        }
-    }
-    var rightEdge: CGFloat? {
-        set {
-            objc_setAssociatedObject(self, RunTimeButtonKey.rightNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-           
-        }
-        
-        get {
-            
-            return  objc_getAssociatedObject(self, RunTimeButtonKey.rightNameKey!) as? CGFloat
-        }
-    }
-    
-    var bottomEdge: CGFloat? {
-        set {
-            objc_setAssociatedObject(self, RunTimeButtonKey.bottomNameKey!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-           
-        }
-        
-        get {
-            
-            return  objc_getAssociatedObject(self, RunTimeButtonKey.bottomNameKey!) as? CGFloat
-        }
-    }
-    
-    
-    /// 扩大点击区域
-    ///
-    /// - Parameters:
-    ///   - top: 上
-    ///   - right: 右
-    ///   - bottom: 下
-    ///   - left: 左
-    func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat)  {
-        self.topEdge = top
-        self.rightEdge = right
-        self.bottomEdge = bottom
-        self.leftEdge = left
-        
-    }
-    
-    open override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let left = self.leftEdge ?? 0
-        let right = self.rightEdge ?? 0
-        let bottom = self.bottomEdge ?? 0
-        let top = self.topEdge ?? 0
-        
-        var rect:CGRect
-        if left > 0 || right > 0 || bottom > 0 || top > 0 {
-            rect = CGRect(x: self.bounds.origin.x - left,
-                                     y: self.bounds.origin.y - top,
-                                     width: self.bounds.size.width + left + right, height: self.bounds.size.height + top + bottom)
-        }else{
-            rect = self.bounds
-        }
-        
-        if rect.contains(self.bounds) {
-            return super.hitTest(point, with: event)
-        }
-        return rect.contains(point) ? self : nil
-    }
-    
-    
+ 
 }
 
 
@@ -219,7 +131,7 @@ extension UIButton {
         setImage(image, for: .normal)
         
         //布局界面
-        let titleLabelWidth = self.titleLabel?.text?.obtainTextWidth(font: (self.titleLabel?.font)!) ?? 0
+        let titleLabelWidth = self.titleLabel?.text?.getWidth(font: (self.titleLabel?.font)!) ?? 0
         //左右两边的空隙
         let spaceW = (buttonWidth - titleLabelWidth - imageWidth)/2
         imageEdgeInsets = UIEdgeInsets(top: 0, left: -spaceW+space, bottom: 0, right: spaceW-space)
@@ -239,7 +151,7 @@ extension UIButton {
         setImage(image, for: .normal)
         
         //布局界面
-        let titleLabelWidth = self.titleLabel?.text?.obtainTextWidth(font: (self.titleLabel?.font)!) ?? 0
+        let titleLabelWidth = self.titleLabel?.text?.getWidth(font: (self.titleLabel?.font)!) ?? 0
         let labelHeight = CGFloat((self.titleLabel?.font.pointSize)!)
 
         imageEdgeInsets = UIEdgeInsets(top: -labelHeight-space/2, left: 0, bottom: 0, right: -titleLabelWidth)

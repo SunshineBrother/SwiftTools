@@ -45,10 +45,10 @@ class JHLabel: UILabel {
         }
        
         /// 绘制文本
-        let size = CGSize(width:CGFloat(self.W), height:CGFloat.greatestFiniteMagnitude)
+        let size = CGSize(width:CGFloat(self.w), height:CGFloat.greatestFiniteMagnitude)
         let MYRect = self.text!.boundingRect(with: size, options:.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : font], context:nil)
         let Height = MYRect.size.height
-        let tempRect = CGRect.init(x: 0, y: 0, width: self.W, height: Height)
+        let tempRect = CGRect.init(x: 0, y: 0, width: self.w, height: Height)
         
         if topText == true {
             super.drawText(in: tempRect)
@@ -56,10 +56,7 @@ class JHLabel: UILabel {
             super.drawText(in: rect)
         }
     }
-    
-    
-    
-  
+
     
 }
 

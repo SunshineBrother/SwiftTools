@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 extension Double{
     func format(_ f:String) -> String {
         return String(format: "%@\(f)f", self)

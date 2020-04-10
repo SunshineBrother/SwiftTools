@@ -7,10 +7,7 @@
 //
 
 import UIKit
-
-class JHRegularHelp: NSObject {
-
-}
+ 
 enum ValidatedType {
     case Email
     case PhoneNumber

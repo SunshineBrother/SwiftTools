@@ -24,7 +24,7 @@ class ButtonController: UIViewController {
         
         // 设置居左
         self.button2.setTitleWithImage(title: "测试测试", image: UIImage.init(named: "coupon")!)
-        self.button2.setImageFrontTextWithLeftAlignment(imageWidth: 25, space: 10, buttonWidth: button2.W)
+        self.button2.setImageFrontTextWithLeftAlignment(imageWidth: 25, space: 10, buttonWidth: button2.w)
         //上下结构
          self.button3.setTitleWithImage(title: "测试测试", image: UIImage.init(named: "coupon")!)
         self.button3.setImageFrontTextWithTopAlignment(imageWidth: 25, space: 10)

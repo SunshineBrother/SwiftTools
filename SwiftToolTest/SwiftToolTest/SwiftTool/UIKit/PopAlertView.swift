@@ -13,7 +13,7 @@ enum SystemPOPType {
     case actionSheet
 }
 
-class JHPOPAlertView: NSObject {
+class PopAlertView: NSObject {
     
     /// 弹出系统提示框
     ///

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+ 
 struct RunTimeTapGestureKey {
     ///连续两次点击相差时间
     static let timeInterval = UnsafeRawPointer.init(bitPattern: "timeInterval".hashValue)
@@ -25,7 +26,12 @@ extension UITapGestureRecognizer:UIGestureRecognizerDelegate{
         }
     }
     
-   
+    
+    /// 有时间间隔的点击事件
+    /// - Parameters:
+    ///   - target: target description
+    ///   - action: action description
+    ///   - timeInterval: timeInterval description
     convenience init(target: Any?, action: Selector?,timeInterval:CGFloat) {
         self.init(target: target, action: action)
         self.timeInterval = timeInterval
@@ -41,8 +47,7 @@ extension UITapGestureRecognizer:UIGestureRecognizerDelegate{
         }
         return true
     }
-    
-    
+   
 }
 
 

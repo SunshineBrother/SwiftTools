@@ -9,15 +9,23 @@
 import UIKit
 
 class ColorController: UIViewController {
-    @IBOutlet weak var bgView: UIView!
-    
+     
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//         bgView.backgroundColor = UIColor.init(hexString: "#CC00FF")
+ 
         
-//        bgView.backgroundColor = UIColor.RGB(100, 100, 100)
-        bgView.backgroundColor = UIColor.random()
+        var att = NSAttributedString(string: "aaaa")
+        
+        att = att.bold()
+        att = att.color(UIColor.red)
+        
+        var att1 = NSAttributedString(string: "bbbb")
+        att1 = att1.strikethrough()
+        
+        label.attributedText = att1 + att
+        
+        
         
     }
 

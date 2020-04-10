@@ -7,10 +7,23 @@
 //
 
 import UIKit
+
+/// 两个字典相加
+/// - Parameters:
+///   - left: left description
+///   - right: right description
+public func + <Key, Value>(left: [Key: Value], right: [Key: Value]) -> [Key: Value]{
+    var result:[Key: Value] = left
+    for (key,value) in right {
+        result[key] = value
+    }
+    return result
+}
+ 
 extension Dictionary {
     
     ///拼接字典
-    mutating func addDictionary(_ para:Dictionary?) -> Dictionary{
+    mutating func add(_ para:Dictionary?) -> Dictionary{
         if para != nil {
             for (key,value) in para! {
                 self[key] = value
@@ -18,34 +31,43 @@ extension Dictionary {
         }
         return self
     }
-    
-    ///判断是否存在
-    public func has(key: Key) -> Bool {
-        return index(forKey: key) != nil
-    }
-    
+  
     ///删除所有
     mutating func removeAll(keys: [Key]) {
         keys.forEach({ removeValue(forKey: $0)})
     }
     
+    
+    /// json字符串转字典
+    /// - Parameter json: json字符串
+    public static func constructFromJSON(json: String) -> Dictionary? {
+        if let data = (try? JSONSerialization.jsonObject(
+            with: json.data(using: String.Encoding.utf8,
+                            allowLossyConversion: true)!,
+            options: JSONSerialization.ReadingOptions.mutableContainers)) as? Dictionary {
+            return data
+        } else {
+            return nil
+        }
+    }
+    
     ///Json字典转Json字符串
-    func jsonString(prettify: Bool = false) -> String? {
+    func formatJSONString() -> String? {
         
         guard JSONSerialization.isValidJSONObject(self) else {
             return nil
         }
-        let options = (prettify == true) ? JSONSerialization.WritingOptions.prettyPrinted : JSONSerialization.WritingOptions()
+        let options = JSONSerialization.WritingOptions.prettyPrinted
         guard let jsonData = try? JSONSerialization.data(withJSONObject: self, options: options) else { return nil }
         return String(data: jsonData, encoding: .utf8)
     }
     
     ///Json字典转Data
-    func jsonData(prettify: Bool = false) -> Data? {
+    func formatJSONData() -> Data? {
         guard JSONSerialization.isValidJSONObject(self) else {
             return nil
         }
-        let options = (prettify == true) ? JSONSerialization.WritingOptions.prettyPrinted : JSONSerialization.WritingOptions()
+        let options = JSONSerialization.WritingOptions.prettyPrinted
         return try? JSONSerialization.data(withJSONObject: self, options: options)
     }
     
