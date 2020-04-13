@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyCountdownButton: UIButton {
+class MyCountDownButton: UIButton {
     // 最大倒计时
     public var maxSecond = 60
     //判断是否处于倒计时状态
