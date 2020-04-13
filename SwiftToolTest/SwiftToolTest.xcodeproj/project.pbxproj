@@ -50,6 +50,7 @@
 		2873315420F7398E00C3075A /* LocationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873315320F7398E00C3075A /* LocationTool.swift */; };
 		2873315720F747BA00C3075A /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2873315520F747BA00C3075A /* LocationController.swift */; };
 		2873315820F747BA00C3075A /* LocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2873315620F747BA00C3075A /* LocationController.xib */; };
+		2877C8D824446D7700F7AFD9 /* MyCountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877C8D724446D7700F7AFD9 /* MyCountdownButton.swift */; };
 		2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2820ABC40A00A60E53 /* DictionaryController.swift */; };
 		2880CE2B20ABC48F00A60E53 /* Dictionary+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */; };
 		2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2880CE3420ABD90400A60E53 /* ValueChange.swift */; };
@@ -64,7 +65,7 @@
 		28D981AA24406C280092CA67 /* NSAttributedString+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981A924406C280092CA67 /* NSAttributedString+JHExtension.swift */; };
 		28D981B02440772B0092CA67 /* UIFont+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981AF2440772B0092CA67 /* UIFont+JHExtension.swift */; };
 		28D981B22440789B0092CA67 /* ControllerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B12440789B0092CA67 /* ControllerTool.swift */; };
-		28D981B624407C8C0092CA67 /* GCDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B524407C8C0092CA67 /* GCDTool.swift */; };
+		28D981B624407C8C0092CA67 /* GCD+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B524407C8C0092CA67 /* GCD+JHExtension.swift */; };
 		28D981B824407CA60092CA67 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B724407CA60092CA67 /* Mems.swift */; };
 		28D981BA24407CAF0092CA67 /* Double+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B924407CAF0092CA67 /* Double+JHExtension.swift */; };
 		28D981BC244088A90092CA67 /* UIViewController+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981BB244088A90092CA67 /* UIViewController+JHExtension.swift */; };
@@ -151,6 +152,7 @@
 		2873315320F7398E00C3075A /* LocationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTool.swift; sourceTree = "<group>"; };
 		2873315520F747BA00C3075A /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 		2873315620F747BA00C3075A /* LocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationController.xib; sourceTree = "<group>"; };
+		2877C8D724446D7700F7AFD9 /* MyCountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCountdownButton.swift; sourceTree = "<group>"; };
 		2880CE2820ABC40A00A60E53 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JHExtension.swift"; sourceTree = "<group>"; };
 		2880CE3420ABD90400A60E53 /* ValueChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueChange.swift; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 		28D981A924406C280092CA67 /* NSAttributedString+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981AF2440772B0092CA67 /* UIFont+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981B12440789B0092CA67 /* ControllerTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerTool.swift; sourceTree = "<group>"; };
-		28D981B524407C8C0092CA67 /* GCDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTool.swift; sourceTree = "<group>"; };
+		28D981B524407C8C0092CA67 /* GCD+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCD+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981B724407CA60092CA67 /* Mems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mems.swift; sourceTree = "<group>"; };
 		28D981B924407CAF0092CA67 /* Double+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981BB244088A90092CA67 /* UIViewController+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+JHExtension.swift"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				28FBB05020B419A300278692 /* UILabel+JHExtension.swift */,
 				286786B420B43EC600209F55 /* JHLabel.swift */,
 				280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */,
+				2877C8D724446D7700F7AFD9 /* MyCountdownButton.swift */,
 				280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */,
 				285E83FA20F4486C0049BD6D /* PopAlertView.swift */,
 				28D981AF2440772B0092CA67 /* UIFont+JHExtension.swift */,
@@ -274,7 +277,7 @@
 				2880CE2A20ABC48F00A60E53 /* Dictionary+JHExtension.swift */,
 				2880CE3420ABD90400A60E53 /* ValueChange.swift */,
 				28FBB03E20B3C45100278692 /* Date+JHExtension.swift */,
-				28D981B524407C8C0092CA67 /* GCDTool.swift */,
+				28D981B524407C8C0092CA67 /* GCD+JHExtension.swift */,
 				28FBB04220B403A400278692 /* RegularHelp.swift */,
 				28D981B724407CA60092CA67 /* Mems.swift */,
 				28D981A5244068910092CA67 /* DeviceInfo.swift */,
@@ -647,11 +650,12 @@
 				2880CE2920ABC40A00A60E53 /* DictionaryController.swift in Sources */,
 				28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */,
 				28FBB04520B4061A00278692 /* regularController.swift in Sources */,
-				28D981B624407C8C0092CA67 /* GCDTool.swift in Sources */,
+				28D981B624407C8C0092CA67 /* GCD+JHExtension.swift in Sources */,
 				282A289F20E9C6670053BEC3 /* ScrollView+JHEmptyDataSet.swift in Sources */,
 				28D981A8244069490092CA67 /* DeviceInfoController.swift in Sources */,
 				287330F520F5F07A00C3075A /* AlertControlller.swift in Sources */,
 				2828282120A1BA2900D40C92 /* TextFieldController.swift in Sources */,
+				2877C8D824446D7700F7AFD9 /* MyCountdownButton.swift in Sources */,
 				28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */,
 				2837440120AA7447008F1ED1 /* String+JHExtension.swift in Sources */,
 				28608EB5210AC8A100D1E4EF /* countdownController.swift in Sources */,
