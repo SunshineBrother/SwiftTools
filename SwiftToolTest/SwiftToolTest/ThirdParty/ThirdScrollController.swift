@@ -26,7 +26,7 @@ class ThirdScrollController: UIViewController,UITableViewDelegate,UITableViewDat
             //点击空白的回调
             print("点击空白的回调")
         }
-        self.tableView.addRefreshWithScrollView(refreshHeaderClosure: {
+        self.tableView.addRefresh(refreshHeaderClosure: {
             //头部刷新
         }) {
             //底部刷新

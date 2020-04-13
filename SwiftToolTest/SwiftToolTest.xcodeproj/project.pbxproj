@@ -67,6 +67,7 @@
 		28D981B624407C8C0092CA67 /* GCDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B524407C8C0092CA67 /* GCDTool.swift */; };
 		28D981B824407CA60092CA67 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B724407CA60092CA67 /* Mems.swift */; };
 		28D981BA24407CAF0092CA67 /* Double+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981B924407CAF0092CA67 /* Double+JHExtension.swift */; };
+		28D981BC244088A90092CA67 /* UIViewController+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981BB244088A90092CA67 /* UIViewController+JHExtension.swift */; };
 		28EC7CE720E331A8006C0CF1 /* JHProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */; };
 		28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */; };
 		28FBB03B20B3C25B00278692 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBB03A20B3C25B00278692 /* TimeController.swift */; };
@@ -167,6 +168,7 @@
 		28D981B524407C8C0092CA67 /* GCDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTool.swift; sourceTree = "<group>"; };
 		28D981B724407CA60092CA67 /* Mems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mems.swift; sourceTree = "<group>"; };
 		28D981B924407CAF0092CA67 /* Double+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+JHExtension.swift"; sourceTree = "<group>"; };
+		28D981BB244088A90092CA67 /* UIViewController+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+JHExtension.swift"; sourceTree = "<group>"; };
 		28EC7CE620E331A8006C0CF1 /* JHProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProgressHUD.swift; sourceTree = "<group>"; };
 		28EF5B8D2099D8500026D1E0 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		28FBB03A20B3C25B00278692 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */,
 				285E83FA20F4486C0049BD6D /* PopAlertView.swift */,
 				28D981AF2440772B0092CA67 /* UIFont+JHExtension.swift */,
+				28D981BB244088A90092CA67 /* UIViewController+JHExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				2873315420F7398E00C3075A /* LocationTool.swift in Sources */,
 				282A289E20E9C6670053BEC3 /* ScrollView+JHRefresh.swift in Sources */,
 				28FBB04E20B4195E00278692 /* LabelController.swift in Sources */,
+				28D981BC244088A90092CA67 /* UIViewController+JHExtension.swift in Sources */,
 				2880CE3720ABD94600A60E53 /* ValueChangeController.swift in Sources */,
 				285E83FB20F4486C0049BD6D /* PopAlertView.swift in Sources */,
 				2873315720F747BA00C3075A /* LocationController.swift in Sources */,

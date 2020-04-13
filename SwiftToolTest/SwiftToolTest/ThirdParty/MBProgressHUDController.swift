@@ -13,19 +13,15 @@ class MBProgressHUDController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        JHProgressHUD.Showloading()
-        JHProgressHUD.Showloading()
-        JHProgressHUD.Showloading()
-        JHProgressHUD.Showloading()
-        
-        delay(3) {
-            JHProgressHUD.dismissHUD()
-        }
+         
     }
 
     
     @IBAction func Test1(_ sender: Any) {
-        
+        self.navigationController?.popViewController(animated: true)
+        if self.callBackClose != nil{
+            self.callBackClose!("123456789")
+        }
     }
     
     

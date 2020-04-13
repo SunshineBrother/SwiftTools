@@ -15,7 +15,7 @@ extension UIScrollView {
     /// - Parameters:
     ///   - refreshHeaderClosure: 头部刷新
     ///   - refreshFooterClosure: 底部刷新
-    func addRefreshWithScrollView(refreshHeaderClosure:@escaping()->(), refreshFooterClosure:@escaping()->())  {
+    func addRefresh(refreshHeaderClosure:@escaping()->(), refreshFooterClosure:@escaping()->())  {
         
         ///*******头部刷新*************
         let header:MJRefreshNormalHeader = MJRefreshNormalHeader.init {
@@ -46,7 +46,7 @@ extension UIScrollView {
     /// 添加头部刷新事件
     ///
     /// - Parameter refreshClosure: 闭包回调
-    func addRefreshHeaderWithScrollView(refreshClosure:@escaping()->()) {
+    func addHeaderRefresh(refreshClosure:@escaping()->()) {
         
         let header:MJRefreshNormalHeader = MJRefreshNormalHeader.init {
             refreshClosure()
@@ -65,7 +65,7 @@ extension UIScrollView {
     /// - Parameters:
     ///   -  tableView: tableView
     ///   - refreshClosure: 闭包回调
-    func addRefreshFooterWithScrollView(refreshClosure:@escaping()->()) {
+    func addFooterRefresh(refreshClosure:@escaping()->()) {
         let foot:MJRefreshBackNormalFooter = MJRefreshBackNormalFooter.init {
             refreshClosure()
         }
@@ -82,7 +82,7 @@ extension UIScrollView {
     /// 结束刷新
     ///
     /// - Parameter tableView: tableView
-    func endRefreshWithTableView() {
+    func endRefreshing() {
        
         if (self.mj_header != nil) {
             self.mj_header.endRefreshing()

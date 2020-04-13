@@ -85,6 +85,9 @@ class TableViewController: UITableViewController {
         vcClass.view.backgroundColor = RGB(r: 240, g: 240, b: 240)
         vcClass.title = model.title
         self.navigationController?.pushViewController(vcClass, animated: true)
+        vcClass.callBackClose = {result in
+            print(result)
+        }
  
     }
 
