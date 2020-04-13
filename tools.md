@@ -285,14 +285,17 @@ print(place)
 ###  倒计时
 这里直接继承自button，写法完全是跟button一样
 ```
-let btn = TimerButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-btn.backgroundColor = UIColor.gray
-btn.setUP(start: "点击获取验证码", prefix: "倒计时", countTime: 10) {
-btn.isWorking = true
-print("*************")
-
-} 
-self.view.addSubview(btn)
+        let myBtn = MyCountDownButton(frame: CGRect(x: 100, y: 100, width: 200, height: 50))
+        myBtn.setTitle("获取验证码", for: .normal)
+        myBtn.setTitle("正在获取验证码：second秒", for: .disabled)
+        myBtn.setTitleColor(.black, for: .normal)
+        myBtn.maxSecond = 30 // 默认为60
+        myBtn.countdown = true
+        myBtn.backgroundColor = RGB(r: 200, g: 200, b: 200)
+        self.view.addSubview(myBtn)
+        myBtn.addTapGesture { (_) in
+            myBtn.countdown = true
+        }
 ```
 ###  小条目
 我们在写一些小条目的时候有的时候会感觉很厌烦，然后我就简单的总结了几个类型
