@@ -17,6 +17,7 @@ class StringController: UIViewController {
         
         //URL编码
         let URL = "https://www.baidu.com"
+        
         print(URL.urlEncoded)
         print(URL.base64)
         //字符串的截取

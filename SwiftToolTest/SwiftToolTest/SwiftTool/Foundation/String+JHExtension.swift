@@ -10,6 +10,20 @@ import UIKit
 //MARK:-- 字符串的拆分 --
 extension String{
     
+    ///根据下标获取某个下标字符
+    subscript(index: Int) -> String {
+        if index < 0 || index > self.count{
+            assert(false, "Index out of range")
+        }
+        for (i,item) in self.enumerated(){
+            if index == i {
+                return "\(item)"
+            }
+        }
+        return ""
+    }
+    
+    
     ///  字符串的截取
    public func subStringFrom(index: Int,length:Int) -> String {
         if self.count > index {

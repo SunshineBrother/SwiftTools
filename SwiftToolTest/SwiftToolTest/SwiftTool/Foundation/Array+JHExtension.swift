@@ -28,6 +28,24 @@ extension Array where Element : Equatable {
         let halfOpenClampedRange = Range(range).clamped(to: Range(indices))
         return Array(self[halfOpenClampedRange])
     }
+    
+    ///传入下标数组，获取该下标数组对应的数组值
+    subscript(input: [Int]) -> ArraySlice<Element> {
+           get {
+               var result = ArraySlice<Element>()
+               for i in input {
+                   assert(i < self.count, "Index out of range")
+                   result.append(self[i])
+               }
+               return result
+           }
+           set {
+               for (index,i) in input.enumerated() {
+                   assert(i < self.count, "Index out of range")
+                   self[i] = newValue[index]
+               }
+           }
+       }
  
 }
 
