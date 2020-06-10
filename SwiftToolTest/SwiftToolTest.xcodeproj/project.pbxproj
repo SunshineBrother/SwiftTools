@@ -42,7 +42,6 @@
 		285BA82A209462D700735E74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285BA829209462D700735E74 /* Model.swift */; };
 		285E83FB20F4486C0049BD6D /* PopAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E83FA20F4486C0049BD6D /* PopAlertView.swift */; };
 		28608EB5210AC8A100D1E4EF /* countdownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28608EB4210AC8A100D1E4EF /* countdownController.swift */; };
-		286786B520B43EC600209F55 /* JHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286786B420B43EC600209F55 /* JHLabel.swift */; };
 		287330F520F5F07A00C3075A /* AlertControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287330F320F5F07A00C3075A /* AlertControlller.swift */; };
 		287330F620F5F07A00C3075A /* AlertControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287330F420F5F07A00C3075A /* AlertControlller.xib */; };
 		287330F920F5FAF800C3075A /* SwiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287330F820F5FAF800C3075A /* SwiftPopMenu.swift */; };
@@ -144,7 +143,6 @@
 		285BA829209462D700735E74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		285E83FA20F4486C0049BD6D /* PopAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAlertView.swift; sourceTree = "<group>"; };
 		28608EB4210AC8A100D1E4EF /* countdownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countdownController.swift; sourceTree = "<group>"; };
-		286786B420B43EC600209F55 /* JHLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHLabel.swift; sourceTree = "<group>"; };
 		287330F320F5F07A00C3075A /* AlertControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControlller.swift; sourceTree = "<group>"; };
 		287330F420F5F07A00C3075A /* AlertControlller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertControlller.xib; sourceTree = "<group>"; };
 		287330F820F5FAF800C3075A /* SwiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPopMenu.swift; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				28B34F6B20A3F22300405640 /* JHTextView.swift */,
 				28FBB04620B40BFA00278692 /* UIView+JHExtension.swift */,
 				28FBB05020B419A300278692 /* UILabel+JHExtension.swift */,
-				286786B420B43EC600209F55 /* JHLabel.swift */,
 				280DD3B020B7B6A800F2276A /* UIButton+JHExtension.swift */,
 				2877C8D724446D7700F7AFD9 /* MyCountDownButton.swift */,
 				280DD3B220B7DC2700F2276A /* UIImage+JHExtension.swift */,
@@ -680,7 +677,6 @@
 				28D981AA24406C280092CA67 /* NSAttributedString+JHExtension.swift in Sources */,
 				2880CE3520ABD90400A60E53 /* ValueChange.swift in Sources */,
 				281FA833216F1AB400840966 /* PopMenuController.swift in Sources */,
-				286786B520B43EC600209F55 /* JHLabel.swift in Sources */,
 				28D981B22440789B0092CA67 /* ControllerTool.swift in Sources */,
 				280DD3AE20B7B67900F2276A /* ButtonController.swift in Sources */,
 				287330F920F5FAF800C3075A /* SwiftPopMenu.swift in Sources */,

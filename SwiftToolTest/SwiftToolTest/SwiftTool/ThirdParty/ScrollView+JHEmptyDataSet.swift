@@ -11,8 +11,7 @@ import DZNEmptyDataSet
 
 //MARK: -- 给UIScrollView添加方法 --
 extension UIScrollView :DZNEmptyDataSetSource,DZNEmptyDataSetDelegate{
-    
-    
+     
     func addEmpty(text:String? = nil,image:String? = nil,offSet:CGFloat? = 0) {
         if text != nil {
             self.emptyText = text

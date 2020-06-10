@@ -13,9 +13,7 @@ public func + (left: NSAttributedString, right: NSAttributedString) -> NSAttribu
     ns.append(right)
     return ns
 }
-
-
-
+ 
 extension NSAttributedString{
     
     /// 加粗

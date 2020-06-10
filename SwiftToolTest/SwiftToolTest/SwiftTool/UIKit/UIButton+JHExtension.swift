@@ -13,8 +13,16 @@ extension UIButton{
     
     convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, target: AnyObject, action: Selector) {
         self.init(frame: CGRect(x: x, y: y, width: w, height: h))
-        addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        addTarget(target, action: action, for:.touchUpInside)
     }
+    
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat, target: AnyObject, action: Selector,timeInterval:CGFloat) {
+        self.init(frame: CGRect(x: x, y: y, width: w, height: h))
+        self.timeInterval = timeInterval
+        addTarget(target, action: action, for:.touchUpInside)
+    }
+    
+    
     /// 设置选中状态文字颜色
     ///
     /// - Parameters:

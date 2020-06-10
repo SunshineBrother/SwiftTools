@@ -14,24 +14,16 @@ class LabelController: UIViewController {
     
     @IBOutlet weak var TextView: UITextView!
     
-    @IBOutlet weak var Label: JHLabel!
+     
     override func viewDidLoad() {
         super.viewDidLoad()
       
         
- 
-        Label.WordSpace = 10
-        Label.text = text
-        Label.numberOfLines = 0
-         
+  
      
     }
 
-    
-    @IBAction func ButtonEvent(_ sender: Any) {
-        Label.topText = true
-        Label.text = "我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦我要左上啦"
-    }
+     
     
 }
 

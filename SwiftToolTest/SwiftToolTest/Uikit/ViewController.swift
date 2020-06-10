@@ -25,10 +25,13 @@ class ViewController: UIViewController {
         View1.addBorder(width: 3, color: UIColor.red)
         
         View2.addBorderBottom(size: 3, color: UIColor.red)
+        View2.cutSemicircle(roundingCorners: [.bottomRight,.topRight] , cornerRadii: CGSize(width: View2.h / 2, height: View2.h / 2))
         
         
         let image = View2.toImage()
         IV.image = image
+        
+        
         
         
     }

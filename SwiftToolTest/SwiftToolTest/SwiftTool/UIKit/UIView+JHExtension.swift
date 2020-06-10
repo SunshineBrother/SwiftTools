@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 //MARK:-- 添加计算属性 --
 struct RunTimeViewKey {
     static let RunTimeViewID = UnsafeRawPointer.init(bitPattern: "RunTimeViewID".hashValue)
@@ -47,6 +47,21 @@ extension UIView {
             $0.removeFromSuperview()
         }
     }
+    
+    
+    /// 切半圆 一边是直角 一边切圆角
+    /// - Parameters: 左边是直角，右边是圆角
+    ///   - roundingCorners: UIRectCornerTopRight | UIRectCornerBottomRight
+    ///   - cornerRadii: self.height/2,self.height/2
+    func cutSemicircle(roundingCorners:UIRectCorner,cornerRadii:CGSize) {
+        let maskPath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadii)
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = self.bounds
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+    }
+    
+    
     /// 设置圆角
     public func addCornerRadius(radius: CGFloat) {
         self.layer.cornerRadius = radius

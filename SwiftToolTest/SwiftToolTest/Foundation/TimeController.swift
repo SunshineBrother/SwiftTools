@@ -13,10 +13,13 @@ class TimeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let str = getCurrentStingTime()
+        let str = getCurrentStingTime(.dateModeYMDHMS)
         print(str)
-        let a = getCurrentStampTime()
-        print(a)
+        
+        
+        let time = getCurrentStampTime(isMS: true)
+        print(time)
+        
         
     }
 
