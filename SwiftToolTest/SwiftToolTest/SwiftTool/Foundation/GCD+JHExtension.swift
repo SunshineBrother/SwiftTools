@@ -40,6 +40,7 @@ func delay(_ time: TimeInterval, task: @escaping ()->()) ->  Task? {
     }
     return result;
 }
+
 func cancel(_ task: Task?) {
     task?(true)
 }

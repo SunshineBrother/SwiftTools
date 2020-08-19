@@ -58,6 +58,7 @@
 		28B34F6C20A3F22300405640 /* JHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B34F6B20A3F22300405640 /* JHTextView.swift */; };
 		28B8DC9820A44CA00046A51F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B8DC9620A44CA00046A51F /* TextViewController.swift */; };
 		28B8DC9920A44CA00046A51F /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8DC9720A44CA00046A51F /* TextViewController.xib */; };
+		28D0987924ED3941001C7E8F /* URL+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D0987824ED3941001C7E8F /* URL+JHExtension.swift */; };
 		28D981A4244067BF0092CA67 /* UIColor+JHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981A3244067BF0092CA67 /* UIColor+JHExtension.swift */; };
 		28D981A6244068910092CA67 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981A5244068910092CA67 /* DeviceInfo.swift */; };
 		28D981A8244069490092CA67 /* DeviceInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D981A7244069490092CA67 /* DeviceInfoController.swift */; };
@@ -159,6 +160,7 @@
 		28B34F6B20A3F22300405640 /* JHTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHTextView.swift; sourceTree = "<group>"; };
 		28B8DC9620A44CA00046A51F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		28B8DC9720A44CA00046A51F /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		28D0987824ED3941001C7E8F /* URL+JHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981A3244067BF0092CA67 /* UIColor+JHExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JHExtension.swift"; sourceTree = "<group>"; };
 		28D981A5244068910092CA67 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		28D981A7244069490092CA67 /* DeviceInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				28D981A924406C280092CA67 /* NSAttributedString+JHExtension.swift */,
 				28D981B12440789B0092CA67 /* ControllerTool.swift */,
 				28D981B924407CAF0092CA67 /* Double+JHExtension.swift */,
+				28D0987824ED3941001C7E8F /* URL+JHExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				28D981A6244068910092CA67 /* DeviceInfo.swift in Sources */,
 				28EF5B8E2099D8500026D1E0 /* ServiceManager.swift in Sources */,
 				2887F05520E9C853003403CD /* ThirdScrollController.swift in Sources */,
+				28D0987924ED3941001C7E8F /* URL+JHExtension.swift in Sources */,
 				283743FE20AA73C2008F1ED1 /* StringController.swift in Sources */,
 				2837440D20AB00EF008F1ED1 /* ArrayController.swift in Sources */,
 				2873315420F7398E00C3075A /* LocationTool.swift in Sources */,
