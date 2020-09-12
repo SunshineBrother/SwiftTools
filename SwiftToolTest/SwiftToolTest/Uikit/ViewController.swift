@@ -10,28 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var View1: UIView!
     
-    @IBOutlet weak var View2: UIView!
-    
-    @IBOutlet weak var IV: UIImageView!
-    
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        View1.addCornerRadius(radius: 10)
-        View1.addBorder(width: 3, color: UIColor.red)
+        let view = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        view.backgroundColor = .red
+        self.view.addSubview(view)
         
-        View2.addBorderBottom(size: 3, color: UIColor.red)
-        View2.cutSemicircle(roundingCorners: [.bottomRight,.topRight] , cornerRadii: CGSize(width: View2.h / 2, height: View2.h / 2))
-        
-        
-        let image = View2.toImage()
-        IV.image = image
-        
-        
+        view.cutCorner(size: 30)
         
         
     }

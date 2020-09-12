@@ -262,8 +262,8 @@
 				2880CE3620ABD94600A60E53 /* ValueChangeController.swift */,
 				28FBB03A20B3C25B00278692 /* TimeController.swift */,
 				28FBB04420B4061A00278692 /* regularController.swift */,
-				2816532220E1E49000D29673 /* ColorController.swift */,
 				2816532320E1E49000D29673 /* ColorController.xib */,
+				2816532220E1E49000D29673 /* ColorController.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";

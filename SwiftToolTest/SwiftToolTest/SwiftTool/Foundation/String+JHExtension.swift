@@ -115,6 +115,9 @@ extension String{
         return pos
     }
     
+    
+    
+    
 }
 
 //MARK: -- 类型判断 --
@@ -207,6 +210,13 @@ extension String{
         } else {
             return nil
         }
+    }
+    
+    
+    
+    /// 字符串转数组
+    var array:[String]{
+        return self.compactMap({String($0)})
     }
 }
 

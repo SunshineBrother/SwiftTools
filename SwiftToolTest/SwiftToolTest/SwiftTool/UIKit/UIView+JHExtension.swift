@@ -10,23 +10,23 @@ import UIKit
  
 //MARK:-- 添加计算属性 --
 struct RunTimeViewKey {
-    static let RunTimeViewID = UnsafeRawPointer.init(bitPattern: "RunTimeViewID".hashValue)
+    static let RunTimeViewName = UnsafeRawPointer.init(bitPattern: "RunTimeViewName".hashValue)
     static let RunTimeViewParam = UnsafeRawPointer.init(bitPattern: "RunTimeViewParam".hashValue)
+    static let RunTimeViewArray = UnsafeRawPointer.init(bitPattern: "RunTimeViewArray".hashValue)
+    static let RunTimeViewAny = UnsafeRawPointer.init(bitPattern: "RunTimeViewAny".hashValue)
 }
 
 extension UIView {
-    /// viewId
-    var ViewID: String? {
+    var name: String? {
         set {
-            objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewID!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewName!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             
         }
         get {
-            return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewID!) as? String
+            return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewName!) as? String
         }
     }
     
-    ///ViewParam
     var ViewParam: Dictionary<String, Any>? {
         set {
             objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewParam!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
@@ -36,65 +36,112 @@ extension UIView {
             return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewParam!) as? Dictionary
         }
     }
- 
+    
+    var viewArray: [Any]? {
+        set {
+            objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewArray!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+            
+        }
+        get {
+            return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewArray!) as? [Any]
+        }
+    }
+    
+    var viewAny: Any? {
+        set {
+            objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewAny!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+        get {
+            return  objc_getAssociatedObject(self, RunTimeViewKey.RunTimeViewAny!)
+        }
+    }
+    
+}
+
+
+//MARK: -- 设置边框和切圆角 --
+extension UIView {
+    
+    /// 切圆
+    /*
+      参考
+     cutCorner(size: 10, roundingCorners: [.bottomRight,.bottomLeft,.topRight,.topLeft])
+     */
+    func cutCorner(size:CGFloat,
+                   roundingCorners:UIRectCorner = [.bottomRight,.bottomLeft,.topRight,.topLeft]) {
+        let cornerRadii = CGSize(width: size, height: size)
+        let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadii)
+        let maskLayer = CAShapeLayer()
+        maskLayer.name = "JH_CutCorner"
+        maskLayer.frame = self.bounds
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+    }
+    
+
+    /// 设置边框
+    public func addBorder(size: CGFloat, color: UIColor) {
+        let names = ["JH_BorderTop",
+                     "JH_BorderBottom",
+                     "JH_BorderLeft",
+                     "JH_BorderRight"]
+        removeLayer(by: names)
+        addBorderTop(size: size, color: color)
+        addBorderBottom(size: size, color: color)
+        addBorderLeft(size: size, color: color)
+        addBorderRight(size: size, color: color)
+    }
+    ///设置顶部边框
+    public func addBorderTop(size: CGFloat, color: UIColor) {
+        removeLayer(by: ["JH_BorderTop"])
+        addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color, name: "JH_BorderTop")
+    }
+    /// 设置底部边框
+    public func addBorderBottom(size: CGFloat, color: UIColor) {
+        removeLayer(by: ["JH_BorderBottom"])
+        addBorderUtility(x: 0, y: frame.height - size, width: frame.width, height: size, color: color, name: "JH_BorderBottom")
+    }
+    /// 设置左侧边框
+    public func addBorderLeft(size: CGFloat, color: UIColor) {
+        removeLayer(by: ["JH_BorderLeft"])
+        addBorderUtility(x: 0, y: 0, width: size, height: frame.height, color: color, name: "JH_BorderLeft")
+    }
+    /// 设置右侧边框
+    public func addBorderRight(size: CGFloat, color: UIColor) {
+        removeLayer(by: ["JH_BorderRight"])
+        addBorderUtility(x: frame.width - size, y: 0, width: size, height: frame.height, color: color, name: "JH_BorderRight")
+    }
+    
+    fileprivate
+    func addBorderUtility(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor,name:String) {
+        let border = CALayer()
+        border.name = name
+        border.backgroundColor = color.cgColor
+        border.frame = CGRect(x: x, y: y, width: width, height: height)
+        layer.addSublayer(border)
+    }
+    
+    /// 移除layer 根据名称
+    /// - Parameter name: name
+    func removeLayer(by names:[String]) {
+        if self.layer.sublayers != nil {
+            for item in self.layer.sublayers! {
+                let name = item.name ?? ""
+                if names.contains(name) {
+                    item.removeFromSuperlayer()
+                }
+            }
+        }
+    }
+    
+    
 }
 
 //MARK:-- 添加方法 --
 extension UIView {
     /// 移除所有子视图
     public func removeAllChildView() {
-        _ = self.subviews.map {
-            $0.removeFromSuperview()
-        }
-    }
-    
-    
-    /// 切半圆 一边是直角 一边切圆角
-    /// - Parameters: 左边是直角，右边是圆角
-    ///   - roundingCorners: UIRectCornerTopRight | UIRectCornerBottomRight
-    ///   - cornerRadii: self.height/2,self.height/2
-    func cutSemicircle(roundingCorners:UIRectCorner,cornerRadii:CGSize) {
-        let maskPath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadii)
-        let maskLayer = CAShapeLayer()
-        maskLayer.frame = self.bounds
-        maskLayer.path = maskPath.cgPath
-        self.layer.mask = maskLayer
-    }
-    
-    
-    /// 设置圆角
-    public func addCornerRadius(radius: CGFloat) {
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
-    }
-    /// 设置边框
-    public func addBorder(width: CGFloat, color: UIColor) {
-        layer.borderWidth = width
-        layer.borderColor = color.cgColor
-        layer.masksToBounds = true
-    }
-    ///设置顶部边框
-    public func addBorderTop(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
-    }
-    /// 设置底部边框
-    public func addBorderBottom(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: frame.height - size, width: frame.width, height: size, color: color)
-    }
-    /// 设置左侧边框
-    public func addBorderLeft(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: 0, y: 0, width: size, height: frame.height, color: color)
-    }
-    /// 设置右侧边框
-    public func addBorderRight(size: CGFloat, color: UIColor) {
-        addBorderUtility(x: frame.width - size, y: 0, width: size, height: frame.height, color: color)
-    }
-    
-    fileprivate func addBorderUtility(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat, color: UIColor) {
-        let border = CALayer()
-        border.backgroundColor = color.cgColor
-        border.frame = CGRect(x: x, y: y, width: width, height: height)
-        layer.addSublayer(border)
+        subviews.forEach { $0.removeFromSuperview() }
     }
     
     /// view截图为image

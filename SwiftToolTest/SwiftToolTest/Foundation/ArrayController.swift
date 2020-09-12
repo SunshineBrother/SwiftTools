@@ -16,6 +16,10 @@ class ArrayController: UIViewController {
         let list = ["1","1","2","2"]
         print(list.removedDuplicates())
         print(list.get(at: 0...3))
+        
+        let list1 = ["张三", "李四", "王二", "赵六"]
+        print(list1.getIndex("李四"))
+        
     
     }
 

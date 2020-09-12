@@ -46,6 +46,21 @@ extension Array where Element : Equatable {
                }
            }
        }
+    
+    
+    /// 获取数组对象的下表
+    /// - Parameter object: 数组对象
+    /// - Returns: description
+    func getIndex(_ object: Element) -> Int? {
+        if let _index = self.index(where:{$0==object}) {
+            return _index
+        }
+        return nil
+    }
+    
+    
+    
+    
  
 }
 
