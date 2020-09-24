@@ -9,7 +9,10 @@
 import UIKit
 
 extension Double{
+    
+    /// 保留几位小说
+    /// - Parameter f: 保留位数
     func format(_ f:String) -> String {
-        return String(format: "%@\(f)f", self)
+        return String(format: "%\(f)f", self)
     }
 }

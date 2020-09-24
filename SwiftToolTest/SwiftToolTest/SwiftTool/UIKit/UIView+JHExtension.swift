@@ -61,6 +61,16 @@ extension UIView {
 
 //MARK: -- 设置边框和切圆角 --
 extension UIView {
+    /// 添加阴影
+    /// - Parameters:
+    ///   - theColor: 阴影
+    ///   - offSet: 偏移量
+    ///   - opacity: 透明度
+    func addShadow(theColor:UIColor = .gray,offSet:CGSize = CGSize(width: 0, height: 2),opacity:Float = 1) {
+        self.layer.shadowColor = theColor.cgColor
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowOffset = offSet
+    }
     
     /// 切圆
     /*
@@ -214,24 +224,12 @@ class BlockTap: UITapGestureRecognizer {
 
 
 //MARK:-- 添加存储属性 --
-extension UIView {
-    /// 宽
-    public var w: CGFloat {
-        get {
-            return self.frame.size.width
-        } set(value) {
-            self.frame = CGRect(x: self.x, y: self.y, width: value, height: self.h)
-        }
+extension UIView{
+    
+    convenience init(x: CGFloat, y: CGFloat, w: CGFloat, h: CGFloat) {
+        self.init(frame: CGRect(x: x, y: y, width: w, height: h))
     }
-    /// 高
-    public var h: CGFloat {
-        get {
-            return self.frame.size.height
-        } set(value) {
-            self.frame = CGRect(x: self.x, y: self.y, width: self.w, height: value)
-        }
-    }
-    /// X
+    
     public var x: CGFloat {
         get {
             return self.frame.origin.x
@@ -239,7 +237,8 @@ extension UIView {
             self.frame = CGRect(x: value, y: self.y, width: self.w, height: self.h)
         }
     }
-    /// Y
+
+   
     public var y: CGFloat {
         get {
             return self.frame.origin.y
@@ -247,8 +246,71 @@ extension UIView {
             self.frame = CGRect(x: self.x, y: value, width: self.w, height: self.h)
         }
     }
+
+  
+    public var w: CGFloat {
+        get {
+            return self.frame.size.width
+        } set(value) {
+            self.frame = CGRect(x: self.x, y: self.y, width: value, height: self.h)
+        }
+    }
+
     
-    ///centerX
+    public var h: CGFloat {
+        get {
+            return self.frame.size.height
+        } set(value) {
+            self.frame = CGRect(x: self.x, y: self.y, width: self.w, height: value)
+        }
+    }
+
+    
+    public var left: CGFloat {
+        get {
+            return self.x
+        } set(value) {
+            self.x = value
+        }
+    }
+
+    
+    public var right: CGFloat {
+        get {
+            return self.x + self.w
+        } set(value) {
+            self.x = value - self.w
+        }
+    }
+
+     
+    public var top: CGFloat {
+        get {
+            return self.y
+        } set(value) {
+            self.y = value
+        }
+    }
+
+     
+    public var bottom: CGFloat {
+        get {
+            return self.y + self.h
+        } set(value) {
+            self.y = value - self.h
+        }
+    }
+
+     
+    public var origin: CGPoint {
+        get {
+            return self.frame.origin
+        } set(value) {
+            self.frame = CGRect(origin: value, size: self.frame.size)
+        }
+    }
+
+     
     public var centerX: CGFloat {
         get {
             return self.center.x
@@ -256,8 +318,8 @@ extension UIView {
             self.center.x = value
         }
     }
-    
-    ///centerY
+
+     
     public var centerY: CGFloat {
         get {
             return self.center.y
@@ -265,15 +327,17 @@ extension UIView {
             self.center.y = value
         }
     }
-    
+
+     
+    public var size: CGSize {
+        get {
+            return self.frame.size
+        } set(value) {
+            self.frame = CGRect(origin: self.frame.origin, size: value)
+        }
+    }
+ 
 }
-
-
-
-
-
-
-
 
 
 

@@ -24,7 +24,7 @@ class JHTextView: UITextView {
     ///设置placeHolder
     var placeHolder: String = ""
     ///设置placeHolder的颜色
-    var placeHolderColor: UIColor = UIColor.gray
+    var placeHolderColor: UIColor = .gray
   
    
     //MARK: -- 初始化 --

@@ -10,11 +10,11 @@ import UIKit
 
 ///RGBA
 func RGBA(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) ->UIColor{
-    return UIColor(red: r/225.0, green: g/225.0, blue: b/225.0, alpha: a)
+    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }
 ///RGB
 func RGB(r:CGFloat,g:CGFloat,b:CGFloat) ->UIColor{
-    return UIColor(red: r/225.0, green: g/225.0, blue: b/225.0, alpha: 1.0)
+    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
 }
 ///随机色
 func randomColor() ->  UIColor{
@@ -27,9 +27,9 @@ func randomColor() ->  UIColor{
 extension UIColor{
     ///随机色
     public static func random(randomAlpha: Bool = false) -> UIColor {
-        let randomRed = arc4random()%255
-        let randomGreen = arc4random()%255
-        let randomBlue = arc4random()%255
+        let randomRed = arc4random()%255.0
+        let randomGreen = arc4random()%255.0
+        let randomBlue = arc4random()%255.0
         let alpha = randomAlpha ? arc4random()%255 : 1
         return RGBA(CGFloat(randomRed), CGFloat(randomGreen), CGFloat(randomBlue), CGFloat(alpha))
     }

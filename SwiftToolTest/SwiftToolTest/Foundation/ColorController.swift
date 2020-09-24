@@ -18,7 +18,7 @@ class ColorController: UIViewController {
         var att = NSAttributedString(string: "aaaa")
         
         att = att.bold()
-        att = att.color(UIColor.red)
+        att = att.color(.red)
         
         var att1 = NSAttributedString(string: "bbbb")
         att1 = att1.strikethrough()

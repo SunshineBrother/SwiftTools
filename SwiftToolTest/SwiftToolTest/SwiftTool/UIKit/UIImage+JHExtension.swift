@@ -9,6 +9,9 @@
 import UIKit
 //MARK: -- 初始化 --
 extension UIImage{
+ 
+    
+    
     /// 根据view 生成image
     public convenience init?(view: UIView) {
         UIGraphicsBeginImageContext(view.frame.size)
@@ -39,6 +42,8 @@ extension UIImage{
         }
         self.init(cgImage: aCgImage)
     }
+    
+    
     
   
 }
