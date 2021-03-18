@@ -58,4 +58,36 @@ let KBoldFont_29 = UIFont.boldSystemFont(ofSize: 29)
 let KBoldFont_30 = UIFont.boldSystemFont(ofSize: 30)
 
 
+public extension UIFont {
+    static func pingFangSCRegular(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Regular", size: ofSize) ?? UIFont.systemFont(ofSize: ofSize)
+    }
 
+    static func pingFangSCUltralight(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Ultralight", size: ofSize) ?? UIFont.pingFangSCThin(ofSize: ofSize)
+    }
+
+    static func pingFangSCLight(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Light", size: ofSize) ?? UIFont.pingFangSCRegular(ofSize: ofSize)
+    }
+
+    static func pingFangSCThin(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Thin", size: ofSize) ?? UIFont.pingFangSCLight(ofSize: ofSize)
+    }
+
+    static func pingFangSCMedium(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Medium", size: ofSize) ?? UIFont.pingFangSCRegular(ofSize: ofSize)
+    }
+
+    static func pingFangSCSemibold(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Semibold", size: ofSize) ?? UIFont.pingFangSCMedium(ofSize: ofSize)
+    }
+
+    static func pingFangSCBold(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-Bold", size: ofSize) ?? UIFont.pingFangSCSemibold(ofSize: ofSize)
+    }
+
+    static func pingFangSCBoldItalic(ofSize: CGFloat) -> UIFont {
+        return UIFont.init(name: "PingFangSC-BoldItalic", size: ofSize) ?? UIFont.pingFangSCBold(ofSize: ofSize)
+    }
+}
