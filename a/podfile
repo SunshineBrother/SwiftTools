@@ -8,13 +8,12 @@ target 'a' do
   pod 'DZNEmptyDataSet'
   pod 'Kingfisher'
   pod 'SwiftLint'
-  pod 'GRDB.swift'
   pod 'SwiftyUserDefaults'
   pod 'CryptoSwift'
   pod 'ObjectMapper'
   pod 'Moya/RxSwift'
   pod 'SwifterSwift'
   pod 'Logan'
-  pod 'WCDB'
+  pod 'WCDB.swift'
   
 end

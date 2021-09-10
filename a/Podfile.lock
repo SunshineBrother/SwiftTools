@@ -2,9 +2,6 @@ PODS:
   - Alamofire (5.4.3)
   - CryptoSwift (1.4.1)
   - DZNEmptyDataSet (1.8.1)
-  - GRDB.swift (5.11.0):
-    - GRDB.swift/standard (= 5.11.0)
-  - GRDB.swift/standard (5.11.0)
   - Kingfisher (6.3.1)
   - Logan (1.2.7):
     - Logan/mbedtls (= 1.2.7)
@@ -47,7 +44,7 @@ PODS:
   - SwifterSwift/UIKit (5.2.0)
   - SwiftLint (0.43.1)
   - SwiftyUserDefaults (5.3.0)
-  - WCDB (1.0.7.5):
+  - WCDB.swift (1.0.8.2):
     - SQLiteRepairKit (~> 1.2.0)
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - WCDBOptimizedSQLCipher (1.2.1)
@@ -55,7 +52,6 @@ PODS:
 DEPENDENCIES:
   - CryptoSwift
   - DZNEmptyDataSet
-  - GRDB.swift
   - Kingfisher
   - Logan
   - MBProgressHUD
@@ -65,14 +61,13 @@ DEPENDENCIES:
   - SwifterSwift
   - SwiftLint
   - SwiftyUserDefaults
-  - WCDB
+  - WCDB.swift
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CryptoSwift
     - DZNEmptyDataSet
-    - GRDB.swift
     - Kingfisher
     - Logan
     - MBProgressHUD
@@ -84,14 +79,13 @@ SPEC REPOS:
     - SwifterSwift
     - SwiftLint
     - SwiftyUserDefaults
-    - WCDB
+    - WCDB.swift
     - WCDBOptimizedSQLCipher
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  GRDB.swift: 9a33d9680cd3c870c82f48a6cbc73d3cfbb235eb
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   Logan: d7e508f88d596b186e9cdcc0cf35b45c89bbc22f
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -103,9 +97,9 @@ SPEC CHECKSUMS:
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
-  WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: bb647e7233f8d4b4ea4146ca7de14408e585301f
+PODFILE CHECKSUM: b8381f85389f73aca02ae4cfe55e368a818ffd4a
 
 COCOAPODS: 1.11.0

@@ -52,12 +52,12 @@
 		34B9E10826E750DD009DA52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B9E10626E750DD009DA52C /* LaunchScreen.storyboard */; };
 		34B9E11326E750DE009DA52C /* aTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9E11226E750DE009DA52C /* aTests.swift */; };
 		34B9E11E26E750DE009DA52C /* aUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9E11D26E750DE009DA52C /* aUITests.swift */; };
+		34CB1C5826EB09E900ED3D7E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB1C5726EB09E900ED3D7E /* Logger.swift */; };
 		34DE072C26E9B3E6008D9CFA /* Bundle+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072B26E9B3E6008D9CFA /* Bundle+HMExtension.swift */; };
 		34DE072E26E9B41E008D9CFA /* HMImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072D26E9B41E008D9CFA /* HMImageViewerController.swift */; };
 		34DE073026E9B623008D9CFA /* UITextField+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072F26E9B623008D9CFA /* UITextField+HMExtension.swift */; };
 		34DE073226E9B8CA008D9CFA /* UITapGestureRecognizer+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073126E9B8CA008D9CFA /* UITapGestureRecognizer+HMExtension.swift */; };
 		34DE073426E9DD11008D9CFA /* Date+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073326E9DD11008D9CFA /* Date+HMExtension.swift */; };
-		34DE073626E9E9B8008D9CFA /* AAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073526E9E9B8008D9CFA /* AAViewController.swift */; };
 		34DE073826E9EB1A008D9CFA /* Dictionary+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073726E9EB1A008D9CFA /* Dictionary+HMExtension.swift */; };
 		34DE073A26E9EBF7008D9CFA /* Double+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073926E9EBF7008D9CFA /* Double+HMExtension.swift */; };
 		34DE074026EA02B7008D9CFA /* HMLogan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE073F26EA02B7008D9CFA /* HMLogan.swift */; };
@@ -133,12 +133,12 @@
 		34B9E11926E750DE009DA52C /* aUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B9E11D26E750DE009DA52C /* aUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aUITests.swift; sourceTree = "<group>"; };
 		34B9E11F26E750DE009DA52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CB1C5726EB09E900ED3D7E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		34DE072B26E9B3E6008D9CFA /* Bundle+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE072D26E9B41E008D9CFA /* HMImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMImageViewerController.swift; sourceTree = "<group>"; };
 		34DE072F26E9B623008D9CFA /* UITextField+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE073126E9B8CA008D9CFA /* UITapGestureRecognizer+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE073326E9DD11008D9CFA /* Date+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+HMExtension.swift"; sourceTree = "<group>"; };
-		34DE073526E9E9B8008D9CFA /* AAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAViewController.swift; sourceTree = "<group>"; };
 		34DE073726E9EB1A008D9CFA /* Dictionary+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE073926E9EBF7008D9CFA /* Double+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE073F26EA02B7008D9CFA /* HMLogan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMLogan.swift; sourceTree = "<group>"; };
@@ -316,8 +316,7 @@
 			children = (
 				34B9E0FB26E750DD009DA52C /* AppDelegate.swift */,
 				34B9E0FF26E750DD009DA52C /* ViewController.swift */,
-				34DE073526E9E9B8008D9CFA /* AAViewController.swift */,
-				34DE073B26E9EE68008D9CFA /* Logan */,
+				34DE073B26E9EE68008D9CFA /* Log */,
 				341C02AD26E8C25100DEF4BA /* Widget */,
 				341C028E26E8A97400DEF4BA /* Tools */,
 				341C028B26E8A13A00DEF4BA /* HUD */,
@@ -369,12 +368,13 @@
 			path = "UIScrollView+Extension";
 			sourceTree = "<group>";
 		};
-		34DE073B26E9EE68008D9CFA /* Logan */ = {
+		34DE073B26E9EE68008D9CFA /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				34CB1C5726EB09E900ED3D7E /* Logger.swift */,
 				34DE073F26EA02B7008D9CFA /* HMLogan.swift */,
 			);
-			path = Logan;
+			path = Log;
 			sourceTree = "<group>";
 		};
 		E5DF7C8A39213B52B568DEB3 /* Pods */ = {
@@ -582,7 +582,6 @@
 				341C028326E8683000DEF4BA /* String+Security.swift in Sources */,
 				34DE073226E9B8CA008D9CFA /* UITapGestureRecognizer+HMExtension.swift in Sources */,
 				34DE072C26E9B3E6008D9CFA /* Bundle+HMExtension.swift in Sources */,
-				34DE073626E9E9B8008D9CFA /* AAViewController.swift in Sources */,
 				34B9E10026E750DD009DA52C /* ViewController.swift in Sources */,
 				34B9E0FC26E750DD009DA52C /* AppDelegate.swift in Sources */,
 				34DE073426E9DD11008D9CFA /* Date+HMExtension.swift in Sources */,
@@ -604,6 +603,7 @@
 				341C029626E8AF7800DEF4BA /* UIFont+HMExtension.swift in Sources */,
 				3419819026E856CE00176117 /* TransformerFactory.swift in Sources */,
 				34DE072E26E9B41E008D9CFA /* HMImageViewerController.swift in Sources */,
+				34CB1C5826EB09E900ED3D7E /* Logger.swift in Sources */,
 				341C029A26E8B2D600DEF4BA /* UILabel+HMExtension.swift in Sources */,
 				34DE073A26E9EBF7008D9CFA /* Double+HMExtension.swift in Sources */,
 				34DE073826E9EB1A008D9CFA /* Dictionary+HMExtension.swift in Sources */,
