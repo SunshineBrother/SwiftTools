@@ -1,0 +1,20 @@
+use_frameworks!
+platform :ios, '10.0'
+
+target 'a' do
+  
+  pod 'MJRefresh'
+  pod 'MBProgressHUD'
+  pod 'DZNEmptyDataSet'
+  pod 'Kingfisher'
+  pod 'SwiftLint'
+  pod 'GRDB.swift'
+  pod 'SwiftyUserDefaults'
+  pod 'CryptoSwift'
+  pod 'ObjectMapper'
+  pod 'Moya/RxSwift'
+  pod 'SwifterSwift'
+  pod 'Logan'
+  pod 'WCDB'
+  
+end
