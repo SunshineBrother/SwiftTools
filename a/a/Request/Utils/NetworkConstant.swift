@@ -14,10 +14,4 @@ struct NetworkConstant {
     static let logoutCode: [String] = [] // 登出code
 }
 
-public func HMNetLog(_ items: Any...) {
-    #if DEBUG
-    for item in items {
-       Swift.print(item)
-    }
-    #endif
-}
+ 

@@ -26,7 +26,7 @@ public extension ApiTargetType {
     var cacheKey: String {
         let keyValue = parameters.map { "\($0.key)=\($0.value)"}.sorted()
         let key: String = keyValue.joined(separator: "&")
-        HMNetLog("缓存key: ", key)
+                    debugPrint("缓存key: ", key)
         return key
     }
 

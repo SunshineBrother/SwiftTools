@@ -53,6 +53,9 @@
 		34B9E11326E750DE009DA52C /* aTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9E11226E750DE009DA52C /* aTests.swift */; };
 		34B9E11E26E750DE009DA52C /* aUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9E11D26E750DE009DA52C /* aUITests.swift */; };
 		34CB1C5826EB09E900ED3D7E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB1C5726EB09E900ED3D7E /* Logger.swift */; };
+		34CB1C5E26EB395400ED3D7E /* HMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB1C5C26EB395300ED3D7E /* HMDBManager.swift */; };
+		34CB1C5F26EB395400ED3D7E /* HMBaseTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB1C5D26EB395400ED3D7E /* HMBaseTableModel.swift */; };
+		34CB1C6126EB3B3E00ED3D7E /* HMDBTableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CB1C6026EB3B3E00ED3D7E /* HMDBTableNames.swift */; };
 		34DE072C26E9B3E6008D9CFA /* Bundle+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072B26E9B3E6008D9CFA /* Bundle+HMExtension.swift */; };
 		34DE072E26E9B41E008D9CFA /* HMImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072D26E9B41E008D9CFA /* HMImageViewerController.swift */; };
 		34DE073026E9B623008D9CFA /* UITextField+HMExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE072F26E9B623008D9CFA /* UITextField+HMExtension.swift */; };
@@ -134,6 +137,9 @@
 		34B9E11D26E750DE009DA52C /* aUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aUITests.swift; sourceTree = "<group>"; };
 		34B9E11F26E750DE009DA52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34CB1C5726EB09E900ED3D7E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		34CB1C5C26EB395300ED3D7E /* HMDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMDBManager.swift; sourceTree = "<group>"; };
+		34CB1C5D26EB395400ED3D7E /* HMBaseTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMBaseTableModel.swift; sourceTree = "<group>"; };
+		34CB1C6026EB3B3E00ED3D7E /* HMDBTableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMDBTableNames.swift; sourceTree = "<group>"; };
 		34DE072B26E9B3E6008D9CFA /* Bundle+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+HMExtension.swift"; sourceTree = "<group>"; };
 		34DE072D26E9B41E008D9CFA /* HMImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMImageViewerController.swift; sourceTree = "<group>"; };
 		34DE072F26E9B623008D9CFA /* UITextField+HMExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+HMExtension.swift"; sourceTree = "<group>"; };
@@ -316,6 +322,7 @@
 			children = (
 				34B9E0FB26E750DD009DA52C /* AppDelegate.swift */,
 				34B9E0FF26E750DD009DA52C /* ViewController.swift */,
+				34CB1C5B26EB394500ED3D7E /* DB */,
 				34DE073B26E9EE68008D9CFA /* Log */,
 				341C02AD26E8C25100DEF4BA /* Widget */,
 				341C028E26E8A97400DEF4BA /* Tools */,
@@ -366,6 +373,16 @@
 				341C028426E897C100DEF4BA /* ScrollView+HMRefresh.swift */,
 			);
 			path = "UIScrollView+Extension";
+			sourceTree = "<group>";
+		};
+		34CB1C5B26EB394500ED3D7E /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				34CB1C5C26EB395300ED3D7E /* HMDBManager.swift */,
+				34CB1C6026EB3B3E00ED3D7E /* HMDBTableNames.swift */,
+				34CB1C5D26EB395400ED3D7E /* HMBaseTableModel.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		34DE073B26E9EE68008D9CFA /* Log */ = {
@@ -581,6 +598,7 @@
 				341C02B126E8C83200DEF4BA /* HMPopTool.swift in Sources */,
 				341C028326E8683000DEF4BA /* String+Security.swift in Sources */,
 				34DE073226E9B8CA008D9CFA /* UITapGestureRecognizer+HMExtension.swift in Sources */,
+				34CB1C6126EB3B3E00ED3D7E /* HMDBTableNames.swift in Sources */,
 				34DE072C26E9B3E6008D9CFA /* Bundle+HMExtension.swift in Sources */,
 				34B9E10026E750DD009DA52C /* ViewController.swift in Sources */,
 				34B9E0FC26E750DD009DA52C /* AppDelegate.swift in Sources */,
@@ -621,8 +639,10 @@
 				3419819626E856CE00176117 /* Expiry.swift in Sources */,
 				341C029826E8B20F00DEF4BA /* UIColor+HMExtension.swift in Sources */,
 				341C02A726E8B89E00DEF4BA /* URL+HMExtension.swift in Sources */,
+				34CB1C5F26EB395400ED3D7E /* HMBaseTableModel.swift in Sources */,
 				34DE073026E9B623008D9CFA /* UITextField+HMExtension.swift in Sources */,
 				341981A626E856FC00176117 /* ZECache.swift in Sources */,
+				34CB1C5E26EB395400ED3D7E /* HMDBManager.swift in Sources */,
 				34DE074026EA02B7008D9CFA /* HMLogan.swift in Sources */,
 				341C028726E897D300DEF4BA /* ScrollView+HMEmptyDataSet.swift in Sources */,
 				341981B426E8572200176117 /* Response+Map.swift in Sources */,

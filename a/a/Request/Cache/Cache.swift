@@ -93,12 +93,12 @@ extension DiskStorage {
         try? fileManager.setAttributes([.modificationDate: newExpiry.date], ofItemAtPath: filePath)
         do {
             try fileManager.setAttributes([.modificationDate: newExpiry.date], ofItemAtPath: filePath)
-            HMNetLog("设置缓存时间完成", newExpiry, newExpiry.date)
+                        debugPrint("设置缓存时间完成", newExpiry, newExpiry.date)
         } catch let error {
-            HMNetLog(error.localizedDescription)
+                        debugPrint(error.localizedDescription)
             isFinish = false
         }
-        HMNetLog("返回成功标识")
+                    debugPrint("返回成功标识")
         return isFinish
     }
 
@@ -126,7 +126,7 @@ extension DiskStorage {
         do {
             try fileManager.removeItem(atPath: makeFilePath(for: key))
         } catch let error {
-            HMNetLog(error.localizedDescription)
+                        debugPrint(error.localizedDescription)
         }
     }
 
@@ -145,7 +145,7 @@ extension DiskStorage {
         do {
             try fileManager.removeItem(atPath: path)
         } catch let error {
-            HMNetLog(error.localizedDescription)
+                        debugPrint(error.localizedDescription)
         }
         createDirectory()
     }
@@ -267,7 +267,7 @@ extension DiskStorage {
     func makeFileName(for key: String) -> String {
         let fileExtension = URL(fileURLWithPath: key).pathExtension
         let fileName = key.MD5
-        HMNetLog("keyMd5: ", fileName)
+                    debugPrint("keyMd5: ", fileName)
 
         switch fileExtension.isEmpty {
         case true:
@@ -281,11 +281,11 @@ extension DiskStorage {
         guard !fileManager.fileExists(atPath: path) else {
             return
         }
-        HMNetLog(path)
+                    debugPrint(path)
         do {
             try fileManager.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
         } catch let error {
-            HMNetLog(error.localizedDescription)
+                        debugPrint(error.localizedDescription)
         }
     }
 }
