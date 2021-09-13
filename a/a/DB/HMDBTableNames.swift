@@ -5,6 +5,8 @@
 
 import Foundation
 
-enum HMDBTableNames: String {
+
+/// 表
+public enum HMDBTableNames: String {
     case baseTable = "HMBaseTable"
 }

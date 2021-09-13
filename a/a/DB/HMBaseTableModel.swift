@@ -13,7 +13,6 @@ import WCDBSwift
 class HMBaseTableModel: TableCodable {
     var key: String = ""
     var data: String = ""
-     
     
     
     // 对于不需要写入数据库的字段，则不需要在 CodingKeys 内定义
@@ -23,7 +22,7 @@ class HMBaseTableModel: TableCodable {
         static let objectRelationalMapping = TableBinding(CodingKeys.self)
         case key
         case data
-        
+       
         
         // 字段约束是 TableEncodable 的一个可选函数，可根据需求选择实现或不实现。它用于定于针对单个字段的约束，如主键约束、非空约束、唯一约束、默认值等。
         /**
@@ -38,9 +37,7 @@ class HMBaseTableModel: TableCodable {
          )
          */
         static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
-            return [
-                key: ColumnConstraintBinding(isPrimary: true)
-            ]
+            return [:]
         }
     }
     
