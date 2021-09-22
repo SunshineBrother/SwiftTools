@@ -1,0 +1,112 @@
+PODS:
+  - Alamofire (5.4.3)
+  - BeeHive (1.6.0)
+  - CryptoSwift (1.4.1)
+  - DZNEmptyDataSet (1.8.1)
+  - HMSwifterSwift (0.1.0)
+  - Home (0.1.0):
+    - BeeHive (~> 1.6.0)
+    - HMSwifterSwift
+    - Home/Resources (= 0.1.0)
+  - Home/Resources (0.1.0):
+    - BeeHive (~> 1.6.0)
+    - HMSwifterSwift
+  - Kingfisher (6.3.1)
+  - Logan (1.2.7):
+    - Logan/mbedtls (= 1.2.7)
+  - Logan/mbedtls (1.2.7)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.2)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - ObjectMapper (4.2.0)
+  - Order (0.1.0):
+    - BeeHive (~> 1.6.0)
+    - Home
+  - Request (0.1.0):
+    - Moya/RxSwift
+    - ObjectMapper (~> 4.2.0)
+  - RxSwift (6.2.0)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - SwiftLint (0.44.0)
+  - ThirdLib (0.1.0):
+    - CryptoSwift (~> 1.4.1)
+    - DZNEmptyDataSet (~> 1.8.1)
+    - Kingfisher (~> 6.3.1)
+    - Logan (~> 1.2.7)
+    - MBProgressHUD (~> 1.2.0)
+    - MJRefresh (~> 3.7.2)
+    - WCDB.swift (~> 1.0.8.2)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
+
+DEPENDENCIES:
+  - BeeHive
+  - HMSwifterSwift (from `Modules/HMSwifterSwift`)
+  - Home (from `Modules/Home`)
+  - Order (from `Modules/Order`)
+  - Request (from `Modules/Request`)
+  - SwiftLint
+  - ThirdLib (from `Modules/ThirdLib`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BeeHive
+    - CryptoSwift
+    - DZNEmptyDataSet
+    - Kingfisher
+    - Logan
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - ObjectMapper
+    - RxSwift
+    - SQLiteRepairKit
+    - SwiftLint
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+
+EXTERNAL SOURCES:
+  HMSwifterSwift:
+    :path: Modules/HMSwifterSwift
+  Home:
+    :path: Modules/Home
+  Order:
+    :path: Modules/Order
+  Request:
+    :path: Modules/Request
+  ThirdLib:
+    :path: Modules/ThirdLib
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  BeeHive: 64c01ddec33b9ef8813701e075eeb732327d0f75
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HMSwifterSwift: 503e801139bb099debefc116173d0bd9479939e6
+  Home: b1948d1dc944aac980e2dbd323445b013dc8dc45
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Logan: d7e508f88d596b186e9cdcc0cf35b45c89bbc22f
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Order: cfc03ca4e52f124c8c973eb25313f5f08df521a7
+  Request: b4cab73a7d7885193e53a7fe8b9c4a3461c3555d
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
+  ThirdLib: 6953eea9d2706f0882eeccdd802e16c786fd1c7a
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
+
+PODFILE CHECKSUM: dcd0bac0d323b7056aa7a6a2f28eae55261cee23
+
+COCOAPODS: 1.11.0
