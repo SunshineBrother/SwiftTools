@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  a
+//  SwifterProject
 //
-//  Created by 姜军辉 on 2021/9/7.
+//  Created by jiangjunhui on 2021/9/23.
 //
 
 import UIKit
@@ -14,14 +14,14 @@ class AppDelegate: BHAppDelegate {
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
-        BHContext.shareInstance().application = application
-        BHContext.shareInstance().launchOptions = launchOptions
-        BHContext.shareInstance().moduleConfigName = "Module"
-        BHContext.shareInstance().serviceConfigName = "Service"
-         
-        BeeHive.shareInstance().enableException = true
-        BeeHive.shareInstance().context = BHContext.shareInstance()
-        
+//        BHContext.shareInstance().application = application
+//        BHContext.shareInstance().launchOptions = launchOptions
+//        BHContext.shareInstance().moduleConfigName = "Module"
+//        BHContext.shareInstance().serviceConfigName = "Service"
+//
+//        BeeHive.shareInstance().enableException = true
+//        BeeHive.shareInstance().context = BHContext.shareInstance()
+//
         
         super.application(application, didFinishLaunchingWithOptions: launchOptions)
       

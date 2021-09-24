@@ -1,13 +1,13 @@
 //
-//  HARMAYUITests.swift
-//  HARMAYUITests
+//  SwifterProjectUITests.swift
+//  SwifterProjectUITests
 //
-//  Created by jiangjunhui on 2021/9/17.
+//  Created by jiangjunhui on 2021/9/23.
 //
 
 import XCTest
 
-class HARMAYUITests: XCTestCase {
+class SwifterProjectUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

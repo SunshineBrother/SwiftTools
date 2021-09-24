@@ -1,21 +1,17 @@
 //
-//  BaseNavigationController.swift
-//  Store
+//  AppDelegate.swift
+//  SwifterProject
 //
-//  Created by yunna on 2018/2/2.
-//  Copyright © 2018年 yunna. All rights reserved.
+//  Created by jiangjunhui on 2021/9/23.
 //
 
 import UIKit
 
 class BaseNavigationController: UINavigationController, UINavigationControllerDelegate {
-    
     var pushing = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-
          
     }
  
