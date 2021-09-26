@@ -1,13 +1,30 @@
 # Swift学习
 
 使用BeeHive实现一个组件化方案，封装了各种工具。想要学习或者直接拿来使用的都非常好用
-  
+
+项目包含5个组件
+- 1、ThirdLib：各种第三方封装
+  - Crypto：加密
+  - DB：基于WCDB的封装
+  - HUD：MBProgressHUD封装
+  - Log：基于Logan的封装
+  - UIImageView+Kingfisher
+  - UIScrollView+Extension
+    - 添加刷新
+    - 空白页
+- 2、Request：Moya/RxSwift/ObjectMapper封装
+  - 直接返回model
+  - 添加数据缓存
+  - 网络日志打印
+
+- 3、JHSwifterSwift：各种小工具
+- 4、HomeModule：业务逻辑
+- 5、OrderModule：业务逻辑
+
+
+
  - [知识点](https://github.com/SunshineBrother/SwiftTools/blob/master/知识点.md)
 - [小工具](https://github.com/SunshineBrother/SwiftTools/blob/master/tools.md)
-
-
-
-
 
 
 
