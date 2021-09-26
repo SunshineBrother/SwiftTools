@@ -15,6 +15,8 @@
 		3401365E26FC19030024240C /* SwifterProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401365D26FC19030024240C /* SwifterProjectUITests.swift */; };
 		3401366E26FC19A90024240C /* BaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401366C26FC19A90024240C /* BaseTabbarController.swift */; };
 		3401366F26FC19A90024240C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3401366D26FC19A90024240C /* BaseNavigationController.swift */; };
+		344D7A542700213600EEAC74 /* Module.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D7A522700213600EEAC74 /* Module.plist */; };
+		344D7A552700213600EEAC74 /* Service.plist in Resources */ = {isa = PBXBuildFile; fileRef = 344D7A532700213600EEAC74 /* Service.plist */; };
 		D041949C57FE1A84A30DF78D /* Pods_SwifterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32B9D41E5D61D43C7BADCBD /* Pods_SwifterProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		3401365F26FC19030024240C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3401366C26FC19A90024240C /* BaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabbarController.swift; sourceTree = "<group>"; };
 		3401366D26FC19A90024240C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		344D7A522700213600EEAC74 /* Module.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Module.plist; sourceTree = "<group>"; };
+		344D7A532700213600EEAC74 /* Service.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Service.plist; sourceTree = "<group>"; };
 		B607B14E5F104F3EFFFCB8E4 /* Pods-SwifterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterProject.release.xcconfig"; path = "Target Support Files/Pods-SwifterProject/Pods-SwifterProject.release.xcconfig"; sourceTree = "<group>"; };
 		D32B9D41E5D61D43C7BADCBD /* Pods_SwifterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwifterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 		3401363A26FC19020024240C /* SwifterProject */ = {
 			isa = PBXGroup;
 			children = (
+				344D7A522700213600EEAC74 /* Module.plist */,
+				344D7A532700213600EEAC74 /* Service.plist */,
 				3401363B26FC19020024240C /* AppDelegate.swift */,
 				3401366D26FC19A90024240C /* BaseNavigationController.swift */,
 				3401366C26FC19A90024240C /* BaseTabbarController.swift */,
@@ -257,7 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344D7A542700213600EEAC74 /* Module.plist in Resources */,
 				3401364826FC19030024240C /* LaunchScreen.storyboard in Resources */,
+				344D7A552700213600EEAC74 /* Service.plist in Resources */,
 				3401364526FC19030024240C /* Assets.xcassets in Resources */,
 				3401364326FC19020024240C /* Main.storyboard in Resources */,
 			);

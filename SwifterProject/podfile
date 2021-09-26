@@ -5,6 +5,13 @@ target 'SwifterProject' do
   use_frameworks!
   pod 'BeeHive'
   pod 'SwiftLint'
+  
+  
+  pod 'ThirdLib', :path => 'Modules/ThirdLib'
+  pod 'JHSwifterSwift', :path => 'Modules/JHSwifterSwift'
+  pod 'Request', :path => 'Modules/Request'
+  pod 'HomeModule', :path => 'Modules/HomeModule'
+  pod 'OrderModule', :path => 'Modules/OrderModule'
 
 
 end

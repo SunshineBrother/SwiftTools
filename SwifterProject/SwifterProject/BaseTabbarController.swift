@@ -7,6 +7,9 @@
 
 import UIKit
 import BeeHive
+import OrderModule
+import HomeModule
+import JHSwifterSwift
 
 class BaseTabbarController: UITabBarController {
 
@@ -14,24 +17,18 @@ class BaseTabbarController: UITabBarController {
         super.viewDidLoad()
 
         
-//        if let order: OrderServerProtocol = BeeHive.shareInstance().createService(OrderServerProtocol.self) as? OrderServerProtocol {
-//            let orderVC = BaseNavigationController(rootViewController: order.getOrderController())
-//            setupChildVC(childVC: orderVC, title: "order", normalImage: "manager_selected", selectedImage: "manager_selected")
-//        }
-//        
-//        
-//        if let home: HomeServerProtocol = BeeHive.shareInstance().createService(HomeServerProtocol.self) as? HomeServerProtocol {
-//            let homeVC = BaseNavigationController(rootViewController: home.getHomeController())
-//            setupChildVC(childVC: homeVC, title: "home", normalImage: "manager_selected", selectedImage: "manager_selected")
-//        }
+        if let order: OrderServerProtocol = BeeHive.shareInstance().createService(OrderServerProtocol.self) as? OrderServerProtocol {
+            let orderVC = BaseNavigationController(rootViewController: order.getOrderController())
+            setupChildVC(childVC: orderVC, title: "order", normalImage: "Order", selectedImage: "Order")
+        }
+        
+        
+        if let home: HomeServerProtocol = BeeHive.shareInstance().createService(HomeServerProtocol.self) as? HomeServerProtocol {
+            let homeVC = BaseNavigationController(rootViewController: home.getHomeController())
+            setupChildVC(childVC: homeVC, title: "home", normalImage: "home", selectedImage: "home")
+        }
  
-        
-        
-        
-        
-        
-        
-       
+ 
       
     }
     
