@@ -1,10 +1,17 @@
 # Swift学习
 
+使用BeeHive实现一个组件化方案，封装了各种工具。想要学习或者直接拿来使用的都非常好用
   
  - [知识点](https://github.com/SunshineBrother/SwiftTools/blob/master/知识点.md)
 - [小工具](https://github.com/SunshineBrother/SwiftTools/blob/master/tools.md)
 
-# 新项目
+
+
+
+
+
+
+# 新项目开始前的思考
 
 ## 第三方库
 
@@ -52,23 +59,28 @@
 ## 需要注意的问题
 
 - 国际化问题
+  - 安卓 iOS 前端统一资源
 - 路由管理
 - 是否有节假日换皮肤的需求
 - 黑暗模式是否是配
 - tabbar和navigationbar问题 （是否用，待考虑）
   - [ESTabBarController](https://github.com/eggswift/ESTabBarController)
   - [RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController)
-- 资源管理
+- 资源管理（考虑）
   - 文字（大小，类型）资源：统一格式，json读取
   - color资源：统一格式，json读取
-  - 图片资源
+  - 图片资源：json读取
 - 架构模式（MVC）
-  - Model层：api+server+json转model
+  - Server层：api+server+json转model
+  - Model层
   - view层：view层仅仅负责布局，事件处理可以通过代理交给controller层处理
   - controller
     - 给view赋值
     - 处理响应事件
     - 处理一些业务逻辑
+- 基类放到哪里
+  - BaseViewConroller
+  - BaseWebViewController
 
 
 
@@ -80,31 +92,35 @@
 
 - 2、navigationBarModules(待考虑)
 
-- 3、WrappersModules 包装整个项目
+- 3、WrappersModules 包装整个项目（待考虑：是单独的module还是直接放到主项目里面）
 
-- 4、DataCenterModules 数据中心
+- 4、FoundationModules 基于系统库封装
 
-- 5、FoundationModules 基于系统库封装
+- 5、widgetModules 一些小组建的封装
 
-- 6、widgetModules 一些小组建的封装
-
-- 7、sdkModules 
+- 6、sdkModules 
 
   
 
 ### 业务模块
 
-- 1、LoginModule
-
-- 2、HomeModule
-
-- 3、OrderModule
-
-- 4、PayModule
-
-- 5、AnalyseModule埋点
-
-- 6、WebViewModule等等
+- 1、DataCenterModules 数据中心
+  - 待考虑：这个数据中心我们是做成**集约型还是离散型** 
+    - 集约型：作为一个modules，其他的读取这个modules
+    - 离散型：每个modules自己存储自己数据中心，注册的时候需要赋值，好处：每一个模块都可以单独运行，不需要依赖这个独立的数据中心
+  - 静态数据
+    - color资源
+    - 文字（大小，类型）资源
+  - 动态数据
+    - userId
+    - token
+    - mobile
+- 2、LoginModule
+- 3、HomeModule 
+- 4、OrderModule
+- 5、PayModule
+- 6、AnalyseModule埋点
+- 7、WebViewModule等等
 
 
 
